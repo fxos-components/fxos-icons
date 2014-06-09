@@ -1,0 +1,17 @@
+{
+  "name": "gaia-icons",
+  "version": "0.0.0",
+  "homepage": "https://github.com/wilsonpage/gaia-icons",
+  "authors": [
+    "Wilson Page <wilsonpage@me.com>"
+  ],
+  "main": "style.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
