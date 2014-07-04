@@ -16,9 +16,11 @@ module.exports = function(grunt) {
           embed: true,
           types: 'woff',
           ligatures: true,
-          template: 'node_modules/grunt-webfont/tasks/templates/bootstrap.css',
+          template: 'template.css',
           templateOptions: {
-            classPrefix: 'icon-'
+            baseClass: "",
+            classPrefix: 'icon-',
+            mixinPrefix: ""
           }
         }
       }
