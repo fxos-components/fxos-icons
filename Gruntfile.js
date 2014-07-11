@@ -13,12 +13,13 @@ module.exports = function(grunt) {
         options: {
           font: 'gaia-icons',
           destHtml: 'examples/',
-          embed: true,
-          types: 'woff',
+          embed: 'ttf',
+          types: 'ttf',
           ligatures: true,
           template: 'template.css',
+          htmlDemoTemplate: 'template.html',
           templateOptions: {
-            baseClass: "",
+            baseClass: "gaia-icon",
             classPrefix: 'icon-',
             mixinPrefix: ""
           }
