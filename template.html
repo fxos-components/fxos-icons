@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= fontBaseName %></title>
+    <style>
+    body {
+        margin:0;
+        padding:10px 20px;
+        background:#fff;
+        color:#222;
+        }
+    h1, div, footer {
+        font-family:"Helvetica Neue", Arial, sans-serif;
+        }
+    h1 {
+        margin:20px 0 10px;
+        font-size:30px;
+        font-weight:normal;
+        }
+    .icons__item,
+    .icons__item i {
+        line-height: 30px;
+        cursor:pointer;
+        }
+    .icons__item:hover {
+        color:#3c90be;
+        }
+    .icons__item i {
+        position: static;
+        padding-right: 40px;
+        text-rendering:optimizeLegibility;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+    }
+    footer {
+        margin-top:40px;
+        font-size:14px;
+        color:#999;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+      <h1>Usage</h1>
+      <pre><code>&lt;i class=&quot;<%= baseClass ? baseClass + ' ' : '' %><%= classPrefix %><span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+      <% if (addLigatures) { %>
+      <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
+      <% } %>
+      <p>(Click on an icon to get the class name)</p>
+
+      <h1><%= fontBaseName %></h1>
+
+      <div class="icons" id="icons">
+          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+              <div class="icons__item" data-name="<%= glyph %>"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %>"></i> <%= classPrefix %><%= glyph %></div>
+          <% } %>
+      </div>
+
+      <% if (addLigatures) { %>
+      <div class="ligature-icons" style="display:none">
+          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx]; %>
+              <%= glyph %>
+          <% } %>
+      </div>
+      <% } %>
+
+
+      <script>
+      (function() {
+          document.getElementById('icons').onclick = function(e) {
+              e = e || window.event;
+              var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+              document.getElementById('name').innerHTML = name;
+              document.getElementById('name2').innerHTML = name;
+          }
+      })();
+      </script>
+  </body>
+</html>
