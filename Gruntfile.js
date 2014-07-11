@@ -6,19 +6,39 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     webfont: {
-      icons: {
+      embedded: {
         src: 'images/*.svg',
         dest: 'fonts/',
         destCss: './',
         options: {
           font: 'gaia-icons',
           destHtml: 'examples/',
-          embed: true,
-          types: 'woff',
+          embed: 'ttf',
+          types: 'ttf',
           ligatures: true,
           template: 'template.css',
+          htmlDemoTemplate: 'template.html',
           templateOptions: {
-            baseClass: "",
+            baseClass: "gaia-icon",
+            classPrefix: 'icon-',
+            mixinPrefix: ""
+          }
+        }
+      },
+
+      ttf: {
+        src: 'images/*.svg',
+        dest: 'fonts/',
+        destCss: './',
+        options: {
+          font: 'gaia-icons',
+          destHtml: 'examples/',
+          types: 'ttf',
+          ligatures: true,
+          template: 'template.css',
+          htmlDemoTemplate: 'template.html',
+          templateOptions: {
+            baseClass: "gaia-icon",
             classPrefix: 'icon-',
             mixinPrefix: ""
           }
@@ -44,5 +64,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webfont');
   grunt.loadNpmTasks('grunt-rename');
 
-  grunt.registerTask('default', ['webfont', 'rename']);
+  grunt.registerTask('default', ['webfont:ttf', 'webfont:embedded', 'rename']);
 };
