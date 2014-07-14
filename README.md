@@ -1,4 +1,4 @@
-# &lt;gaia-icons&gt; ![](https://travis-ci.org/gaia-components/gaia-icons.svg)
+# &lt;gaia-icons&gt;
 
 ## Installation
 
