@@ -3,11 +3,11 @@ module.exports = function(grunt) {
   'use strict';
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('bower.json'),
 
     webfont: {
 
-      // Creates an stylesheet with embedded font
+      // Creates a stylesheet with embedded font
       embedded: {
         src: 'images/*.svg',
         dest: './',
@@ -26,13 +26,13 @@ module.exports = function(grunt) {
         }
       },
 
-      // Creates
-      woff: {
+      // Creates font files
+      files: {
         src: 'images/*.svg',
         dest: 'fonts/',
         options: {
           font: 'gaia-icons',
-          types: 'woff',
+          types: 'woff,ttf,eot',
           ligatures: true,
           hashes: false
         }
@@ -51,11 +51,6 @@ module.exports = function(grunt) {
       example: {
         src: 'gaia-icons.html',
         dest: 'index.html'
-      },
-
-      font: {
-        src: 'fonts/gaia-icons.woff',
-        dest: './gaia-icons.woff'
       }
     },
 
@@ -86,9 +81,10 @@ module.exports = function(grunt) {
       }
     },
 
-    // Removes unwanted files
-    // created by grunt-webfont
-    clean: ['fonts']
+    clean: [
+      'fonts/gaia-icons.css',
+      'fonts/gaia-icons.html'
+    ]
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -97,7 +93,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-rename');
 
   grunt.registerTask('default', [
-    'webfont:woff',
+    'webfont:files',
     'webfont:embedded',
     'rename',
     'replace',
