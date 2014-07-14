@@ -1,0 +1,748 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gaia-icons</title>
+    <style>
+    body {
+        margin:0;
+        padding:10px 20px;
+        background:#fff;
+        color:#222;
+        }
+    h1, div, footer {
+        font-family:"Helvetica Neue", Arial, sans-serif;
+        }
+    h1 {
+        margin:20px 0 10px;
+        font-size:30px;
+        font-weight:normal;
+        }
+    .icons__item,
+    .icons__item i {
+        line-height: 30px;
+        cursor:pointer;
+        }
+    .icons__item:hover {
+        color:#3c90be;
+        }
+    .icons__item i {
+        position: static;
+        padding-right: 40px;
+        text-rendering:optimizeLegibility;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+    }
+    footer {
+        margin-top:40px;
+        font-size:14px;
+        color:#999;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h1>Usage</h1>
+      <pre><code>&lt;i class=&quot;icon-<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+      
+      <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
+      
+      <p>(Click on an icon to get the class name)</p>
+
+      <h1>gaia-icons</h1>
+
+      <div class="icons" id="icons">
+          
+              <div class="icons__item" data-name="accessibility"><i class=" icon-accessibility"></i> icon-accessibility</div>
+          
+              <div class="icons__item" data-name="add-contact"><i class=" icon-add-contact"></i> icon-add-contact</div>
+          
+              <div class="icons__item" data-name="add"><i class=" icon-add"></i> icon-add</div>
+          
+              <div class="icons__item" data-name="airplane"><i class=" icon-airplane"></i> icon-airplane</div>
+          
+              <div class="icons__item" data-name="alarm-full"><i class=" icon-alarm-full"></i> icon-alarm-full</div>
+          
+              <div class="icons__item" data-name="alarm-stop"><i class=" icon-alarm-stop"></i> icon-alarm-stop</div>
+          
+              <div class="icons__item" data-name="alarm"><i class=" icon-alarm"></i> icon-alarm</div>
+          
+              <div class="icons__item" data-name="album"><i class=" icon-album"></i> icon-album</div>
+          
+              <div class="icons__item" data-name="allday"><i class=" icon-allday"></i> icon-allday</div>
+          
+              <div class="icons__item" data-name="arrow-back"><i class=" icon-arrow-back"></i> icon-arrow-back</div>
+          
+              <div class="icons__item" data-name="arrow-forward"><i class=" icon-arrow-forward"></i> icon-arrow-forward</div>
+          
+              <div class="icons__item" data-name="artist"><i class=" icon-artist"></i> icon-artist</div>
+          
+              <div class="icons__item" data-name="attachment"><i class=" icon-attachment"></i> icon-attachment</div>
+          
+              <div class="icons__item" data-name="back"><i class=" icon-back"></i> icon-back</div>
+          
+              <div class="icons__item" data-name="battery-low"><i class=" icon-battery-low"></i> icon-battery-low</div>
+          
+              <div class="icons__item" data-name="battery-very-low"><i class=" icon-battery-very-low"></i> icon-battery-very-low</div>
+          
+              <div class="icons__item" data-name="battery"><i class=" icon-battery"></i> icon-battery</div>
+          
+              <div class="icons__item" data-name="bluetooth"><i class=" icon-bluetooth"></i> icon-bluetooth</div>
+          
+              <div class="icons__item" data-name="brightness"><i class=" icon-brightness"></i> icon-brightness</div>
+          
+              <div class="icons__item" data-name="calendar"><i class=" icon-calendar"></i> icon-calendar</div>
+          
+              <div class="icons__item" data-name="call-bluetooth"><i class=" icon-call-bluetooth"></i> icon-call-bluetooth</div>
+          
+              <div class="icons__item" data-name="call-hangup"><i class=" icon-call-hangup"></i> icon-call-hangup</div>
+          
+              <div class="icons__item" data-name="call-hold"><i class=" icon-call-hold"></i> icon-call-hold</div>
+          
+              <div class="icons__item" data-name="call-incoming"><i class=" icon-call-incoming"></i> icon-call-incoming</div>
+          
+              <div class="icons__item" data-name="call-merge"><i class=" icon-call-merge"></i> icon-call-merge</div>
+          
+              <div class="icons__item" data-name="call-missed"><i class=" icon-call-missed"></i> icon-call-missed</div>
+          
+              <div class="icons__item" data-name="call-outgoing"><i class=" icon-call-outgoing"></i> icon-call-outgoing</div>
+          
+              <div class="icons__item" data-name="call-reversed"><i class=" icon-call-reversed"></i> icon-call-reversed</div>
+          
+              <div class="icons__item" data-name="call"><i class=" icon-call"></i> icon-call</div>
+          
+              <div class="icons__item" data-name="camera"><i class=" icon-camera"></i> icon-camera</div>
+          
+              <div class="icons__item" data-name="change-wallpaper"><i class=" icon-change-wallpaper"></i> icon-change-wallpaper</div>
+          
+              <div class="icons__item" data-name="clear-input"><i class=" icon-clear-input"></i> icon-clear-input</div>
+          
+              <div class="icons__item" data-name="close"><i class=" icon-close"></i> icon-close</div>
+          
+              <div class="icons__item" data-name="compose"><i class=" icon-compose"></i> icon-compose</div>
+          
+              <div class="icons__item" data-name="contact-find"><i class=" icon-contact-find"></i> icon-contact-find</div>
+          
+              <div class="icons__item" data-name="contacts"><i class=" icon-contacts"></i> icon-contacts</div>
+          
+              <div class="icons__item" data-name="crashed"><i class=" icon-crashed"></i> icon-crashed</div>
+          
+              <div class="icons__item" data-name="crop-1x1"><i class=" icon-crop-1x1"></i> icon-crop-1x1</div>
+          
+              <div class="icons__item" data-name="crop-2x3"><i class=" icon-crop-2x3"></i> icon-crop-2x3</div>
+          
+              <div class="icons__item" data-name="crop-3x2"><i class=" icon-crop-3x2"></i> icon-crop-3x2</div>
+          
+              <div class="icons__item" data-name="crop"><i class=" icon-crop"></i> icon-crop</div>
+          
+              <div class="icons__item" data-name="data"><i class=" icon-data"></i> icon-data</div>
+          
+              <div class="icons__item" data-name="delete"><i class=" icon-delete"></i> icon-delete</div>
+          
+              <div class="icons__item" data-name="developer"><i class=" icon-developer"></i> icon-developer</div>
+          
+              <div class="icons__item" data-name="device-info"><i class=" icon-device-info"></i> icon-device-info</div>
+          
+              <div class="icons__item" data-name="dialpad"><i class=" icon-dialpad"></i> icon-dialpad</div>
+          
+              <div class="icons__item" data-name="dismiss-keyboard"><i class=" icon-dismiss-keyboard"></i> icon-dismiss-keyboard</div>
+          
+              <div class="icons__item" data-name="do-not-track"><i class=" icon-do-not-track"></i> icon-do-not-track</div>
+          
+              <div class="icons__item" data-name="download"><i class=" icon-download"></i> icon-download</div>
+          
+              <div class="icons__item" data-name="edit-contact"><i class=" icon-edit-contact"></i> icon-edit-contact</div>
+          
+              <div class="icons__item" data-name="edit-image"><i class=" icon-edit-image"></i> icon-edit-image</div>
+          
+              <div class="icons__item" data-name="edit"><i class=" icon-edit"></i> icon-edit</div>
+          
+              <div class="icons__item" data-name="email-forward"><i class=" icon-email-forward"></i> icon-email-forward</div>
+          
+              <div class="icons__item" data-name="email-mark-read"><i class=" icon-email-mark-read"></i> icon-email-mark-read</div>
+          
+              <div class="icons__item" data-name="email-mark-unread"><i class=" icon-email-mark-unread"></i> icon-email-mark-unread</div>
+          
+              <div class="icons__item" data-name="email-move"><i class=" icon-email-move"></i> icon-email-move</div>
+          
+              <div class="icons__item" data-name="email-reply"><i class=" icon-email-reply"></i> icon-email-reply</div>
+          
+              <div class="icons__item" data-name="email"><i class=" icon-email"></i> icon-email</div>
+          
+              <div class="icons__item" data-name="exclamation"><i class=" icon-exclamation"></i> icon-exclamation</div>
+          
+              <div class="icons__item" data-name="expand"><i class=" icon-expand"></i> icon-expand</div>
+          
+              <div class="icons__item" data-name="facebook"><i class=" icon-facebook"></i> icon-facebook</div>
+          
+              <div class="icons__item" data-name="feedback"><i class=" icon-feedback"></i> icon-feedback</div>
+          
+              <div class="icons__item" data-name="find"><i class=" icon-find"></i> icon-find</div>
+          
+              <div class="icons__item" data-name="firefox"><i class=" icon-firefox"></i> icon-firefox</div>
+          
+              <div class="icons__item" data-name="flag"><i class=" icon-flag"></i> icon-flag</div>
+          
+              <div class="icons__item" data-name="flash-auto"><i class=" icon-flash-auto"></i> icon-flash-auto</div>
+          
+              <div class="icons__item" data-name="flash-off"><i class=" icon-flash-off"></i> icon-flash-off</div>
+          
+              <div class="icons__item" data-name="flash-on"><i class=" icon-flash-on"></i> icon-flash-on</div>
+          
+              <div class="icons__item" data-name="focus-locked"><i class=" icon-focus-locked"></i> icon-focus-locked</div>
+          
+              <div class="icons__item" data-name="focus-locking"><i class=" icon-focus-locking"></i> icon-focus-locking</div>
+          
+              <div class="icons__item" data-name="forward"><i class=" icon-forward"></i> icon-forward</div>
+          
+              <div class="icons__item" data-name="gesture"><i class=" icon-gesture"></i> icon-gesture</div>
+          
+              <div class="icons__item" data-name="gmail"><i class=" icon-gmail"></i> icon-gmail</div>
+          
+              <div class="icons__item" data-name="grid-circular"><i class=" icon-grid-circular"></i> icon-grid-circular</div>
+          
+              <div class="icons__item" data-name="grid"><i class=" icon-grid"></i> icon-grid</div>
+          
+              <div class="icons__item" data-name="hdr-boxed"><i class=" icon-hdr-boxed"></i> icon-hdr-boxed</div>
+          
+              <div class="icons__item" data-name="hdr"><i class=" icon-hdr"></i> icon-hdr</div>
+          
+              <div class="icons__item" data-name="help"><i class=" icon-help"></i> icon-help</div>
+          
+              <div class="icons__item" data-name="homescreen"><i class=" icon-homescreen"></i> icon-homescreen</div>
+          
+              <div class="icons__item" data-name="incoming-sms"><i class=" icon-incoming-sms"></i> icon-incoming-sms</div>
+          
+              <div class="icons__item" data-name="info"><i class=" icon-info"></i> icon-info</div>
+          
+              <div class="icons__item" data-name="keyboard"><i class=" icon-keyboard"></i> icon-keyboard</div>
+          
+              <div class="icons__item" data-name="languages"><i class=" icon-languages"></i> icon-languages</div>
+          
+              <div class="icons__item" data-name="link"><i class=" icon-link"></i> icon-link</div>
+          
+              <div class="icons__item" data-name="location"><i class=" icon-location"></i> icon-location</div>
+          
+              <div class="icons__item" data-name="lock"><i class=" icon-lock"></i> icon-lock</div>
+          
+              <div class="icons__item" data-name="media-storage"><i class=" icon-media-storage"></i> icon-media-storage</div>
+          
+              <div class="icons__item" data-name="menu"><i class=" icon-menu"></i> icon-menu</div>
+          
+              <div class="icons__item" data-name="messages"><i class=" icon-messages"></i> icon-messages</div>
+          
+              <div class="icons__item" data-name="mic"><i class=" icon-mic"></i> icon-mic</div>
+          
+              <div class="icons__item" data-name="minus"><i class=" icon-minus"></i> icon-minus</div>
+          
+              <div class="icons__item" data-name="more"><i class=" icon-more"></i> icon-more</div>
+          
+              <div class="icons__item" data-name="mute"><i class=" icon-mute"></i> icon-mute</div>
+          
+              <div class="icons__item" data-name="network"><i class=" icon-network"></i> icon-network</div>
+          
+              <div class="icons__item" data-name="nfc"><i class=" icon-nfc"></i> icon-nfc</div>
+          
+              <div class="icons__item" data-name="no-favicon"><i class=" icon-no-favicon"></i> icon-no-favicon</div>
+          
+              <div class="icons__item" data-name="notifications"><i class=" icon-notifications"></i> icon-notifications</div>
+          
+              <div class="icons__item" data-name="outgoing-sms"><i class=" icon-outgoing-sms"></i> icon-outgoing-sms</div>
+          
+              <div class="icons__item" data-name="outlook"><i class=" icon-outlook"></i> icon-outlook</div>
+          
+              <div class="icons__item" data-name="pause"><i class=" icon-pause"></i> icon-pause</div>
+          
+              <div class="icons__item" data-name="picture-size"><i class=" icon-picture-size"></i> icon-picture-size</div>
+          
+              <div class="icons__item" data-name="play"><i class=" icon-play"></i> icon-play</div>
+          
+              <div class="icons__item" data-name="playlist"><i class=" icon-playlist"></i> icon-playlist</div>
+          
+              <div class="icons__item" data-name="privacy"><i class=" icon-privacy"></i> icon-privacy</div>
+          
+              <div class="icons__item" data-name="radio"><i class=" icon-radio"></i> icon-radio</div>
+          
+              <div class="icons__item" data-name="recent-calls"><i class=" icon-recent-calls"></i> icon-recent-calls</div>
+          
+              <div class="icons__item" data-name="reload"><i class=" icon-reload"></i> icon-reload</div>
+          
+              <div class="icons__item" data-name="repeat-once"><i class=" icon-repeat-once"></i> icon-repeat-once</div>
+          
+              <div class="icons__item" data-name="repeat"><i class=" icon-repeat"></i> icon-repeat</div>
+          
+              <div class="icons__item" data-name="reply-all"><i class=" icon-reply-all"></i> icon-reply-all</div>
+          
+              <div class="icons__item" data-name="rotate"><i class=" icon-rotate"></i> icon-rotate</div>
+          
+              <div class="icons__item" data-name="scene"><i class=" icon-scene"></i> icon-scene</div>
+          
+              <div class="icons__item" data-name="scrop-free"><i class=" icon-scrop-free"></i> icon-scrop-free</div>
+          
+              <div class="icons__item" data-name="sd-card"><i class=" icon-sd-card"></i> icon-sd-card</div>
+          
+              <div class="icons__item" data-name="search"><i class=" icon-search"></i> icon-search</div>
+          
+              <div class="icons__item" data-name="secure-unverified"><i class=" icon-secure-unverified"></i> icon-secure-unverified</div>
+          
+              <div class="icons__item" data-name="secure"><i class=" icon-secure"></i> icon-secure</div>
+          
+              <div class="icons__item" data-name="seek-back"><i class=" icon-seek-back"></i> icon-seek-back</div>
+          
+              <div class="icons__item" data-name="seek-forward"><i class=" icon-seek-forward"></i> icon-seek-forward</div>
+          
+              <div class="icons__item" data-name="select"><i class=" icon-select"></i> icon-select</div>
+          
+              <div class="icons__item" data-name="self-timer"><i class=" icon-self-timer"></i> icon-self-timer</div>
+          
+              <div class="icons__item" data-name="send"><i class=" icon-send"></i> icon-send</div>
+          
+              <div class="icons__item" data-name="settings"><i class=" icon-settings"></i> icon-settings</div>
+          
+              <div class="icons__item" data-name="share"><i class=" icon-share"></i> icon-share</div>
+          
+              <div class="icons__item" data-name="shuffle"><i class=" icon-shuffle"></i> icon-shuffle</div>
+          
+              <div class="icons__item" data-name="sim-toolkit"><i class=" icon-sim-toolkit"></i> icon-sim-toolkit</div>
+          
+              <div class="icons__item" data-name="sim"><i class=" icon-sim"></i> icon-sim</div>
+          
+              <div class="icons__item" data-name="skip-back"><i class=" icon-skip-back"></i> icon-skip-back</div>
+          
+              <div class="icons__item" data-name="skip-forward"><i class=" icon-skip-forward"></i> icon-skip-forward</div>
+          
+              <div class="icons__item" data-name="sms"><i class=" icon-sms"></i> icon-sms</div>
+          
+              <div class="icons__item" data-name="songs"><i class=" icon-songs"></i> icon-songs</div>
+          
+              <div class="icons__item" data-name="sound-max"><i class=" icon-sound-max"></i> icon-sound-max</div>
+          
+              <div class="icons__item" data-name="sound-min"><i class=" icon-sound-min"></i> icon-sound-min</div>
+          
+              <div class="icons__item" data-name="sound-mute"><i class=" icon-sound-mute"></i> icon-sound-mute</div>
+          
+              <div class="icons__item" data-name="sparkle"><i class=" icon-sparkle"></i> icon-sparkle</div>
+          
+              <div class="icons__item" data-name="speaker"><i class=" icon-speaker"></i> icon-speaker</div>
+          
+              <div class="icons__item" data-name="star-empty"><i class=" icon-star-empty"></i> icon-star-empty</div>
+          
+              <div class="icons__item" data-name="star-full"><i class=" icon-star-full"></i> icon-star-full</div>
+          
+              <div class="icons__item" data-name="stop"><i class=" icon-stop"></i> icon-stop</div>
+          
+              <div class="icons__item" data-name="storage"><i class=" icon-storage"></i> icon-storage</div>
+          
+              <div class="icons__item" data-name="switch"><i class=" icon-switch"></i> icon-switch</div>
+          
+              <div class="icons__item" data-name="sync"><i class=" icon-sync"></i> icon-sync</div>
+          
+              <div class="icons__item" data-name="tethering"><i class=" icon-tethering"></i> icon-tethering</div>
+          
+              <div class="icons__item" data-name="tick"><i class=" icon-tick"></i> icon-tick</div>
+          
+              <div class="icons__item" data-name="time"><i class=" icon-time"></i> icon-time</div>
+          
+              <div class="icons__item" data-name="toggle-camera-front"><i class=" icon-toggle-camera-front"></i> icon-toggle-camera-front</div>
+          
+              <div class="icons__item" data-name="toggle-camera-rear"><i class=" icon-toggle-camera-rear"></i> icon-toggle-camera-rear</div>
+          
+              <div class="icons__item" data-name="topup-with-code"><i class=" icon-topup-with-code"></i> icon-topup-with-code</div>
+          
+              <div class="icons__item" data-name="topup"><i class=" icon-topup"></i> icon-topup</div>
+          
+              <div class="icons__item" data-name="twitter"><i class=" icon-twitter"></i> icon-twitter</div>
+          
+              <div class="icons__item" data-name="undo-circular"><i class=" icon-undo-circular"></i> icon-undo-circular</div>
+          
+              <div class="icons__item" data-name="undo"><i class=" icon-undo"></i> icon-undo</div>
+          
+              <div class="icons__item" data-name="unlock"><i class=" icon-unlock"></i> icon-unlock</div>
+          
+              <div class="icons__item" data-name="update-balance"><i class=" icon-update-balance"></i> icon-update-balance</div>
+          
+              <div class="icons__item" data-name="usb"><i class=" icon-usb"></i> icon-usb</div>
+          
+              <div class="icons__item" data-name="user"><i class=" icon-user"></i> icon-user</div>
+          
+              <div class="icons__item" data-name="vibrate"><i class=" icon-vibrate"></i> icon-vibrate</div>
+          
+              <div class="icons__item" data-name="video-size"><i class=" icon-video-size"></i> icon-video-size</div>
+          
+              <div class="icons__item" data-name="video"><i class=" icon-video"></i> icon-video</div>
+          
+              <div class="icons__item" data-name="voicemail"><i class=" icon-voicemail"></i> icon-voicemail</div>
+          
+              <div class="icons__item" data-name="wallpaper"><i class=" icon-wallpaper"></i> icon-wallpaper</div>
+          
+              <div class="icons__item" data-name="wand"><i class=" icon-wand"></i> icon-wand</div>
+          
+              <div class="icons__item" data-name="wifi-1"><i class=" icon-wifi-1"></i> icon-wifi-1</div>
+          
+              <div class="icons__item" data-name="wifi-2"><i class=" icon-wifi-2"></i> icon-wifi-2</div>
+          
+              <div class="icons__item" data-name="wifi-3"><i class=" icon-wifi-3"></i> icon-wifi-3</div>
+          
+              <div class="icons__item" data-name="wifi-4"><i class=" icon-wifi-4"></i> icon-wifi-4</div>
+          
+              <div class="icons__item" data-name="wifi-5"><i class=" icon-wifi-5"></i> icon-wifi-5</div>
+          
+              <div class="icons__item" data-name="wifi-permissions"><i class=" icon-wifi-permissions"></i> icon-wifi-permissions</div>
+          
+      </div>
+
+      
+      <div class="ligature-icons" style="display:none">
+          
+              accessibility
+          
+              add-contact
+          
+              add
+          
+              airplane
+          
+              alarm-full
+          
+              alarm-stop
+          
+              alarm
+          
+              album
+          
+              allday
+          
+              arrow-back
+          
+              arrow-forward
+          
+              artist
+          
+              attachment
+          
+              back
+          
+              battery-low
+          
+              battery-very-low
+          
+              battery
+          
+              bluetooth
+          
+              brightness
+          
+              calendar
+          
+              call-bluetooth
+          
+              call-hangup
+          
+              call-hold
+          
+              call-incoming
+          
+              call-merge
+          
+              call-missed
+          
+              call-outgoing
+          
+              call-reversed
+          
+              call
+          
+              camera
+          
+              change-wallpaper
+          
+              clear-input
+          
+              close
+          
+              compose
+          
+              contact-find
+          
+              contacts
+          
+              crashed
+          
+              crop-1x1
+          
+              crop-2x3
+          
+              crop-3x2
+          
+              crop
+          
+              data
+          
+              delete
+          
+              developer
+          
+              device-info
+          
+              dialpad
+          
+              dismiss-keyboard
+          
+              do-not-track
+          
+              download
+          
+              edit-contact
+          
+              edit-image
+          
+              edit
+          
+              email-forward
+          
+              email-mark-read
+          
+              email-mark-unread
+          
+              email-move
+          
+              email-reply
+          
+              email
+          
+              exclamation
+          
+              expand
+          
+              facebook
+          
+              feedback
+          
+              find
+          
+              firefox
+          
+              flag
+          
+              flash-auto
+          
+              flash-off
+          
+              flash-on
+          
+              focus-locked
+          
+              focus-locking
+          
+              forward
+          
+              gesture
+          
+              gmail
+          
+              grid-circular
+          
+              grid
+          
+              hdr-boxed
+          
+              hdr
+          
+              help
+          
+              homescreen
+          
+              incoming-sms
+          
+              info
+          
+              keyboard
+          
+              languages
+          
+              link
+          
+              location
+          
+              lock
+          
+              media-storage
+          
+              menu
+          
+              messages
+          
+              mic
+          
+              minus
+          
+              more
+          
+              mute
+          
+              network
+          
+              nfc
+          
+              no-favicon
+          
+              notifications
+          
+              outgoing-sms
+          
+              outlook
+          
+              pause
+          
+              picture-size
+          
+              play
+          
+              playlist
+          
+              privacy
+          
+              radio
+          
+              recent-calls
+          
+              reload
+          
+              repeat-once
+          
+              repeat
+          
+              reply-all
+          
+              rotate
+          
+              scene
+          
+              scrop-free
+          
+              sd-card
+          
+              search
+          
+              secure-unverified
+          
+              secure
+          
+              seek-back
+          
+              seek-forward
+          
+              select
+          
+              self-timer
+          
+              send
+          
+              settings
+          
+              share
+          
+              shuffle
+          
+              sim-toolkit
+          
+              sim
+          
+              skip-back
+          
+              skip-forward
+          
+              sms
+          
+              songs
+          
+              sound-max
+          
+              sound-min
+          
+              sound-mute
+          
+              sparkle
+          
+              speaker
+          
+              star-empty
+          
+              star-full
+          
+              stop
+          
+              storage
+          
+              switch
+          
+              sync
+          
+              tethering
+          
+              tick
+          
+              time
+          
+              toggle-camera-front
+          
+              toggle-camera-rear
+          
+              topup-with-code
+          
+              topup
+          
+              twitter
+          
+              undo-circular
+          
+              undo
+          
+              unlock
+          
+              update-balance
+          
+              usb
+          
+              user
+          
+              vibrate
+          
+              video-size
+          
+              video
+          
+              voicemail
+          
+              wallpaper
+          
+              wand
+          
+              wifi-1
+          
+              wifi-2
+          
+              wifi-3
+          
+              wifi-4
+          
+              wifi-5
+          
+              wifi-permissions
+          
+      </div>
+      
+
+
+      <script>
+      (function() {
+          document.getElementById('icons').onclick = function(e) {
+              e = e || window.event;
+              var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+              document.getElementById('name').innerHTML = name;
+              document.getElementById('name2').innerHTML = name;
+          }
+      })();
+      </script>
+  </body>
+</html>

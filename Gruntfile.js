@@ -6,42 +6,35 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     webfont: {
+
+      // Creates an stylesheet with embedded font
       embedded: {
         src: 'images/*.svg',
-        dest: 'fonts/',
-        destCss: './',
+        dest: './',
         options: {
           font: 'gaia-icons',
-          destHtml: 'examples/',
-          embed: 'ttf',
-          types: 'ttf',
+          embed: 'woff',
+          types: 'woff',
           ligatures: true,
-          template: 'template.css',
-          htmlDemoTemplate: 'template.html',
+          template: 'templates/style.css',
+          htmlDemoTemplate: 'templates/index.html',
           templateOptions: {
-            baseClass: "gaia-icon",
+            baseClass: '',
             classPrefix: 'icon-',
             mixinPrefix: ""
           }
         }
       },
 
-      ttf: {
+      // Creates
+      woff: {
         src: 'images/*.svg',
         dest: 'fonts/',
-        destCss: './',
         options: {
           font: 'gaia-icons',
-          destHtml: 'examples/',
-          types: 'ttf',
+          types: 'woff',
           ligatures: true,
-          template: 'template.css',
-          htmlDemoTemplate: 'template.html',
-          templateOptions: {
-            baseClass: "gaia-icon",
-            classPrefix: 'icon-',
-            mixinPrefix: ""
-          }
+          hashes: false
         }
       }
     },
@@ -54,15 +47,60 @@ module.exports = function(grunt) {
         src: 'gaia-icons.css',
         dest: 'style.css'
       },
+
       example: {
-        src: 'examples/gaia-icons.html',
-        dest: 'examples/index.html'
+        src: 'gaia-icons.html',
+        dest: 'index.html'
+      },
+
+      font: {
+        src: 'fonts/gaia-icons.woff',
+        dest: './gaia-icons.woff'
       }
-    }
+    },
+
+    // Corrects the mime-type for the embedded
+    // font to match what Gecko requires. This
+    // is slow as we have to run the whole
+    // conversion process again, but meh!
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'application/x-font-woff;charset=utf-8;',
+              replacement: 'font/woff;'
+            }
+          ],
+          usePrefix: false
+        },
+
+        files: [
+          {
+            src: ['style.css'],
+            dest: './',
+            flatten: true,
+            expand: true,
+          }
+        ]
+      }
+    },
+
+    // Removes unwanted files
+    // created by grunt-webfont
+    clean: ['fonts']
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-webfont');
+  grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-rename');
 
-  grunt.registerTask('default', ['webfont:ttf', 'webfont:embedded', 'rename']);
+  grunt.registerTask('default', [
+    'webfont:woff',
+    'webfont:embedded',
+    'rename',
+    'replace',
+    'clean'
+  ]);
 };
