@@ -11,6 +11,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "templates",
     "examples",
     "images",
     "test",
@@ -18,7 +19,6 @@
     "create-svg-icon-set-file.py",
     "Gruntfile.js",
     "README.md",
-    "template.css",
     "package.json"
   ]
 }
