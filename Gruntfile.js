@@ -13,8 +13,8 @@ module.exports = function(grunt) {
         dest: './',
         options: {
           font: 'gaia-icons',
-          embed: 'woff',
-          types: 'woff',
+          embed: 'ttf',
+          types: 'ttf',
           ligatures: true,
           template: 'templates/style.css',
           htmlDemoTemplate: 'templates/index.html',
@@ -65,6 +65,10 @@ module.exports = function(grunt) {
             {
               match: 'application/x-font-woff;charset=utf-8;',
               replacement: 'font/woff;'
+            },
+            {
+              match: 'application/x-font-ttf;charset=utf-8;',
+              replacement: 'font/opentype;'
             }
           ],
           usePrefix: false
