@@ -15,24 +15,32 @@
         }
     h1 {
         margin:20px 0 10px;
-        font-size:30px;
+        font-size: 30px;
         font-weight:normal;
         }
+    .icons__item {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      }
     .icons__item,
     .icons__item i {
         line-height: 30px;
         cursor:pointer;
         }
-    .icons__item:hover {
+    .icons__item:hover,
+    .icons__item:target {
+        font-size: 2em;
         color:#3c90be;
         }
     .icons__item i {
         position: static;
-        padding-right: 40px;
+        padding-right: 20px;
         text-rendering:optimizeLegibility;
         -webkit-font-smoothing:antialiased;
         -moz-osx-font-smoothing:grayscale;
     }
+
     footer {
         margin-top:40px;
         font-size:14px;
@@ -53,7 +61,7 @@
 
       <div class="icons" id="icons">
           <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-              <div class="icons__item" data-name="<%= glyph %>"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %>"></i> <%= classPrefix %><%= glyph %></div>
+              <a href="#<%= glyph %>" id="<%= glyph %>" class="icons__item" data-name="<%= glyph %>"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %>"></i> <%= classPrefix %><%= glyph %></a>
           <% } %>
       </div>
 
