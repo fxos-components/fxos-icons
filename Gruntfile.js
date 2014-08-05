@@ -10,7 +10,9 @@ module.exports = function(grunt) {
       // Creates a stylesheet with embedded font
       embedded: {
         src: 'images/*.svg',
-        dest: './',
+        dest: 'fonts/',
+        destCss: './',
+        destHtml: './',
         options: {
           font: 'gaia-icons',
           types: 'ttf',
@@ -87,8 +89,7 @@ module.exports = function(grunt) {
 
     clean: [
       'fonts/gaia-icons.css',
-      'fonts/gaia-icons.html',
-      'gaia-icons.ttf'
+      'fonts/gaia-icons.html'
     ]
   });
 
@@ -98,8 +99,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-rename');
 
   grunt.registerTask('default', [
-    'webfont:files',
     'webfont:embedded',
+    'webfont:files',
     'rename',
     'replace',
     'clean'
