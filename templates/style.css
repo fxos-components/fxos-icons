@@ -19,10 +19,7 @@
 <% } %>
 <% if (baseStyles) { %>
 /* Bootstrap Overrides */
-[class^="<%= classPrefix %>"]:before,
-[class*=" <%= classPrefix %>"]:before<% if (ie7) {%>,
-[class^="<%= classPrefix %>"],
-[class*=" <%= classPrefix %>"]<% } %><% if (addLigatures) { %>,
+.<%= baseClass %>:before<% if (addLigatures) { %>,
 .ligature-icons<% } %> {
 	font-family: "<%= fontBaseName %>";
 	display: inline-block;

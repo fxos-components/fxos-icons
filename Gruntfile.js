@@ -19,8 +19,8 @@ module.exports = function(grunt) {
           template: 'templates/style.css',
           htmlDemoTemplate: 'templates/index.html',
           templateOptions: {
-            baseClass: '',
-            classPrefix: 'icon-',
+            baseClass: 'gi',
+            classPrefix: 'gi-',
             mixinPrefix: "",
           }
         }
@@ -87,7 +87,8 @@ module.exports = function(grunt) {
 
     clean: [
       'fonts/gaia-icons.css',
-      'fonts/gaia-icons.html'
+      'fonts/gaia-icons.html',
+      'gaia-icons.ttf'
     ]
   });
 
