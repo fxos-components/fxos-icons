@@ -24,13 +24,13 @@
 [class^="<%= classPrefix %>"],
 [class*=" <%= classPrefix %>"]<% } %><% if (addLigatures) { %>,
 .ligature-icons<% } %> {
-	font-family:"<%= fontBaseName %>";
-	display:inline-block;
-	font-weight:normal;
-	font-style:normal;
-	text-decoration:inherit;
-	text-transform:none;
-	text-rendering:optimizeLegibility;
+	font-family: "<%= fontBaseName %>";
+	display: inline-block;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
 	font-size: 30px;
 	-webkit-font-smoothing:antialiased;
 }<% } %>
