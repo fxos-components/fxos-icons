@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: "gaia-icons";
-	src: url("gaia-icons.ttf") format("truetype");
+	src: url("fonts/gaia-icons.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
@@ -883,6 +883,12 @@
 
 .gi-tethering:before {
 	content:"tethering";
+}
+
+
+
+.gi-tick-circle:before {
+	content:"tick-circle";
 }
 
 
