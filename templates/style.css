@@ -6,14 +6,14 @@
 @font-face {
     font-family: "<%= fontBaseName %>";
     src: <%= fontSrc1 %>;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 <% } %>@font-face {
 	font-family: "<%= fontBaseName %>";<% if (fontSrc1) { %>
 	src: <%= fontSrc1 %>;<% }%>
 	src: <%= fontSrc2 %>;
-	font-weight: normal;
+	font-weight: 500;
 	font-style: normal;
 }
 <% } %>

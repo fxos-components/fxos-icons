@@ -13,15 +13,15 @@ module.exports = function(grunt) {
         dest: './',
         options: {
           font: 'gaia-icons',
-          embed: 'ttf',
           types: 'ttf',
           ligatures: true,
+          hashes: false,
           template: 'templates/style.css',
           htmlDemoTemplate: 'templates/index.html',
           templateOptions: {
             baseClass: '',
             classPrefix: 'icon-',
-            mixinPrefix: ""
+            mixinPrefix: "",
           }
         }
       },
