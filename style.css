@@ -581,6 +581,12 @@
 
 
 
+.gi-moon:before {
+	content:"moon";
+}
+
+
+
 .gi-more:before {
 	content:"more";
 }
