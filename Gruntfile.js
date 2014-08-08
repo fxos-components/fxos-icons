@@ -15,16 +15,12 @@ module.exports = function(grunt) {
         destHtml: './',
         options: {
           font: 'gaia-icons',
-          types: 'ttf',
+          types: 'woff',
+          embed: 'woff',
           ligatures: true,
           hashes: false,
           template: 'templates/style.css',
-          htmlDemoTemplate: 'templates/index.html',
-          templateOptions: {
-            baseClass: 'gi',
-            classPrefix: 'gi-',
-            mixinPrefix: "",
-          }
+          htmlDemoTemplate: 'templates/index.html'
         }
       },
 
@@ -32,11 +28,20 @@ module.exports = function(grunt) {
       files: {
         src: 'images/*.svg',
         dest: 'fonts/',
+        destCss: './',
+        destHtml: './',
         options: {
           font: 'gaia-icons',
-          types: 'woff,ttf,eot',
+          types: 'ttf,woff,eot',
+          template: 'templates/style.css',
+          htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
-          hashes: false
+          hashes: false,
+          templateOptions: {
+            baseClass: '',
+            classPrefix: '',
+            mixinPrefix: ''
+          }
         }
       }
     },
@@ -45,9 +50,9 @@ module.exports = function(grunt) {
     // other shared components (grunt-webfont
     // doesn't let us specify filenames).
     rename: {
-      css: {
+      'css-embedded': {
         src: 'gaia-icons.css',
-        dest: 'style.css'
+        dest: 'style-embedded.css',
       },
 
       example: {
@@ -56,53 +61,23 @@ module.exports = function(grunt) {
       }
     },
 
-    // Corrects the mime-type for the embedded
-    // font to match what Gecko requires. This
-    // is slow as we have to run the whole
-    // conversion process again, but meh!
-    replace: {
-      dist: {
-        options: {
-          patterns: [
-            {
-              match: 'application/x-font-woff;charset=utf-8;',
-              replacement: 'font/woff;'
-            },
-            {
-              match: 'application/x-font-ttf;charset=utf-8;',
-              replacement: 'font/opentype;'
-            }
-          ],
-          usePrefix: false
-        },
-
-        files: [
-          {
-            src: ['style.css'],
-            dest: './',
-            flatten: true,
-            expand: true,
-          }
-        ]
-      }
-    },
-
     clean: [
       'fonts/gaia-icons.css',
-      'fonts/gaia-icons.html'
+      'fonts/gaia-icons.html',
+      'gaia-icons.html',
+      'gaia-icons.css'
     ]
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-webfont');
-  grunt.loadNpmTasks('grunt-replace');
   grunt.loadNpmTasks('grunt-rename');
 
   grunt.registerTask('default', [
     'webfont:embedded',
+    'rename:css-embedded',
     'webfont:files',
-    'rename',
-    'replace',
+    'rename:example',
     'clean'
   ]);
 };
