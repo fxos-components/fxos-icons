@@ -5,17 +5,21 @@
     <title><%= fontBaseName %></title>
     <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+          margin: 0;
+          padding: 0;
+      }
 
-        body {
-            font-family: 'Helvetica', sans-serif;
-            background: #eee;
-        }
+      body {
+          font-family: 'Helvetica', sans-serif;
+          background: #eee;
+      }
 
-      .icon {
+      section {
+          padding: 20px;
+      }
+
+      section a {
         display: block;
         float: left;
         color: inherit;
@@ -29,17 +33,14 @@
         line-height: 1;
       }
 
-      .icon:target {
-        background: #00caf2;
+      section a:hover {
+        background: #f4f4f4;
       }
 
-      .usage {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        padding: 1rem;
+      section a:target {
+        background: #00caf2;
+        transform: scale(2);
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.24);
       }
 
       h1 {
@@ -55,21 +56,21 @@
         -moz-user-select: none;
         letter-spacing: -2px;
         text-shadow:
-            -1px -1px 0px rgba(0,0,0,0.1),
-            1px 1px 0px rgba(255,255,255,0.5)
+          -1px -1px 0px rgba(0,0,0,0.1),
+          1px 1px 0px rgba(255,255,255,0.5)
       }
 
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <h1>Gaia Icons</h1>
+      <a href="#"><h1>Gaia Icons</h1></a>
 
-      <div class="icons">
+      <section>
       <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-        <a href="#<%= glyph %>" id="<%= glyph %>" class="icon" data-name="<%= glyph %>" data-icon="<%= glyph %>">
+        <a href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
         </a>
       <% } %>
-      </div>
+      </section>
   </body>
 </html>
