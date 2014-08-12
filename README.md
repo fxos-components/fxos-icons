@@ -1,4 +1,4 @@
-# &lt;gaia-icons&gt;
+# gaia-icons
 
 ## Installation
 
