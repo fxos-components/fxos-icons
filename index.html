@@ -4,761 +4,579 @@
     <meta charset="utf-8">
     <title>gaia-icons</title>
     <style>
-    body {
-        margin:0;
-        padding:10px 20px;
-        background:#fff;
-        color:#222;
-        }
-    h1, div, footer {
-        font-family:"Helvetica Neue", Arial, sans-serif;
-        }
-    h1 {
-        margin:20px 0 10px;
-        font-size: 30px;
-        font-weight:normal;
-        }
-    .icons__item {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-      }
-    .icons__item,
-    .icons__item i {
-        line-height: 30px;
-        cursor:pointer;
-        }
-    .icons__item:hover,
-    .icons__item:target {
-        font-size: 2em;
-        color:#3c90be;
-        }
-    .icons__item i {
-        position: static;
-        padding-right: 20px;
-        text-rendering:optimizeLegibility;
-        -webkit-font-smoothing:antialiased;
-        -moz-osx-font-smoothing:grayscale;
-    }
 
-    footer {
-        margin-top:40px;
-        font-size:14px;
-        color:#999;
+        * {
+            margin: 0;
+            padding: 0;
         }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background: #eee;
+        }
+
+      .icon {
+        display: block;
+        float: left;
+        color: inherit;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        border: solid 1px #eee;
+        text-align: center;
+        margin: -1px;
+        background: #fff;
+        line-height: 1;
+      }
+
+      .icon:target {
+        background: #00caf2;
+      }
+
+      .usage {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+      }
+
+      h1 {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 140px;
+        color: #E5E5E5;
+        -moz-user-select: none;
+        letter-spacing: -2px;
+        text-shadow:
+            -1px -1px 0px rgba(0,0,0,0.1),
+            1px 1px 0px rgba(255,255,255,0.5)
+      }
+
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <h1>Usage</h1>
-      <pre><code>&lt;i data-icon=&quot;<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
-      
-      <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
-      
-      <p>(Click on an icon to get the class name)</p>
+      <h1>Gaia Icons</h1>
 
-      <h1>gaia-icons</h1>
+      <div class="icons">
 
-      <div class="icons" id="icons">
-          
-              <a href="#accessibility" id="accessibility" class="icons__item" data-name="accessibility"><i data-icon="accessibility"></i> accessibility</a>
-          
-              <a href="#add-contact" id="add-contact" class="icons__item" data-name="add-contact"><i data-icon="add-contact"></i> add-contact</a>
-          
-              <a href="#add" id="add" class="icons__item" data-name="add"><i data-icon="add"></i> add</a>
-          
-              <a href="#airplane" id="airplane" class="icons__item" data-name="airplane"><i data-icon="airplane"></i> airplane</a>
-          
-              <a href="#alarm-full" id="alarm-full" class="icons__item" data-name="alarm-full"><i data-icon="alarm-full"></i> alarm-full</a>
-          
-              <a href="#alarm-stop" id="alarm-stop" class="icons__item" data-name="alarm-stop"><i data-icon="alarm-stop"></i> alarm-stop</a>
-          
-              <a href="#alarm" id="alarm" class="icons__item" data-name="alarm"><i data-icon="alarm"></i> alarm</a>
-          
-              <a href="#album" id="album" class="icons__item" data-name="album"><i data-icon="album"></i> album</a>
-          
-              <a href="#all-day" id="all-day" class="icons__item" data-name="all-day"><i data-icon="all-day"></i> all-day</a>
-          
-              <a href="#arrow-back" id="arrow-back" class="icons__item" data-name="arrow-back"><i data-icon="arrow-back"></i> arrow-back</a>
-          
-              <a href="#arrow-forward" id="arrow-forward" class="icons__item" data-name="arrow-forward"><i data-icon="arrow-forward"></i> arrow-forward</a>
-          
-              <a href="#artist" id="artist" class="icons__item" data-name="artist"><i data-icon="artist"></i> artist</a>
-          
-              <a href="#attachment" id="attachment" class="icons__item" data-name="attachment"><i data-icon="attachment"></i> attachment</a>
-          
-              <a href="#back" id="back" class="icons__item" data-name="back"><i data-icon="back"></i> back</a>
-          
-              <a href="#battery-low" id="battery-low" class="icons__item" data-name="battery-low"><i data-icon="battery-low"></i> battery-low</a>
-          
-              <a href="#battery-very-low" id="battery-very-low" class="icons__item" data-name="battery-very-low"><i data-icon="battery-very-low"></i> battery-very-low</a>
-          
-              <a href="#battery" id="battery" class="icons__item" data-name="battery"><i data-icon="battery"></i> battery</a>
-          
-              <a href="#bluetooth" id="bluetooth" class="icons__item" data-name="bluetooth"><i data-icon="bluetooth"></i> bluetooth</a>
-          
-              <a href="#brightness" id="brightness" class="icons__item" data-name="brightness"><i data-icon="brightness"></i> brightness</a>
-          
-              <a href="#calendar" id="calendar" class="icons__item" data-name="calendar"><i data-icon="calendar"></i> calendar</a>
-          
-              <a href="#call-bluetooth" id="call-bluetooth" class="icons__item" data-name="call-bluetooth"><i data-icon="call-bluetooth"></i> call-bluetooth</a>
-          
-              <a href="#call-hang-up" id="call-hang-up" class="icons__item" data-name="call-hang-up"><i data-icon="call-hang-up"></i> call-hang-up</a>
-          
-              <a href="#call-hold" id="call-hold" class="icons__item" data-name="call-hold"><i data-icon="call-hold"></i> call-hold</a>
-          
-              <a href="#call-incoming" id="call-incoming" class="icons__item" data-name="call-incoming"><i data-icon="call-incoming"></i> call-incoming</a>
-          
-              <a href="#call-merge" id="call-merge" class="icons__item" data-name="call-merge"><i data-icon="call-merge"></i> call-merge</a>
-          
-              <a href="#call-missed" id="call-missed" class="icons__item" data-name="call-missed"><i data-icon="call-missed"></i> call-missed</a>
-          
-              <a href="#call-outgoing" id="call-outgoing" class="icons__item" data-name="call-outgoing"><i data-icon="call-outgoing"></i> call-outgoing</a>
-          
-              <a href="#call-reversed" id="call-reversed" class="icons__item" data-name="call-reversed"><i data-icon="call-reversed"></i> call-reversed</a>
-          
-              <a href="#call" id="call" class="icons__item" data-name="call"><i data-icon="call"></i> call</a>
-          
-              <a href="#camera" id="camera" class="icons__item" data-name="camera"><i data-icon="camera"></i> camera</a>
-          
-              <a href="#change-wallpaper" id="change-wallpaper" class="icons__item" data-name="change-wallpaper"><i data-icon="change-wallpaper"></i> change-wallpaper</a>
-          
-              <a href="#clear-input" id="clear-input" class="icons__item" data-name="clear-input"><i data-icon="clear-input"></i> clear-input</a>
-          
-              <a href="#close" id="close" class="icons__item" data-name="close"><i data-icon="close"></i> close</a>
-          
-              <a href="#compose" id="compose" class="icons__item" data-name="compose"><i data-icon="compose"></i> compose</a>
-          
-              <a href="#contact-find" id="contact-find" class="icons__item" data-name="contact-find"><i data-icon="contact-find"></i> contact-find</a>
-          
-              <a href="#contacts" id="contacts" class="icons__item" data-name="contacts"><i data-icon="contacts"></i> contacts</a>
-          
-              <a href="#crashed" id="crashed" class="icons__item" data-name="crashed"><i data-icon="crashed"></i> crashed</a>
-          
-              <a href="#crop-1x1" id="crop-1x1" class="icons__item" data-name="crop-1x1"><i data-icon="crop-1x1"></i> crop-1x1</a>
-          
-              <a href="#crop-2x3" id="crop-2x3" class="icons__item" data-name="crop-2x3"><i data-icon="crop-2x3"></i> crop-2x3</a>
-          
-              <a href="#crop-3x2" id="crop-3x2" class="icons__item" data-name="crop-3x2"><i data-icon="crop-3x2"></i> crop-3x2</a>
-          
-              <a href="#crop-free" id="crop-free" class="icons__item" data-name="crop-free"><i data-icon="crop-free"></i> crop-free</a>
-          
-              <a href="#crop" id="crop" class="icons__item" data-name="crop"><i data-icon="crop"></i> crop</a>
-          
-              <a href="#data" id="data" class="icons__item" data-name="data"><i data-icon="data"></i> data</a>
-          
-              <a href="#delete" id="delete" class="icons__item" data-name="delete"><i data-icon="delete"></i> delete</a>
-          
-              <a href="#developer" id="developer" class="icons__item" data-name="developer"><i data-icon="developer"></i> developer</a>
-          
-              <a href="#device-info" id="device-info" class="icons__item" data-name="device-info"><i data-icon="device-info"></i> device-info</a>
-          
-              <a href="#dialpad" id="dialpad" class="icons__item" data-name="dialpad"><i data-icon="dialpad"></i> dialpad</a>
-          
-              <a href="#dismiss-keyboard" id="dismiss-keyboard" class="icons__item" data-name="dismiss-keyboard"><i data-icon="dismiss-keyboard"></i> dismiss-keyboard</a>
-          
-              <a href="#do-not-track" id="do-not-track" class="icons__item" data-name="do-not-track"><i data-icon="do-not-track"></i> do-not-track</a>
-          
-              <a href="#download" id="download" class="icons__item" data-name="download"><i data-icon="download"></i> download</a>
-          
-              <a href="#edit-contact" id="edit-contact" class="icons__item" data-name="edit-contact"><i data-icon="edit-contact"></i> edit-contact</a>
-          
-              <a href="#edit-image" id="edit-image" class="icons__item" data-name="edit-image"><i data-icon="edit-image"></i> edit-image</a>
-          
-              <a href="#edit" id="edit" class="icons__item" data-name="edit"><i data-icon="edit"></i> edit</a>
-          
-              <a href="#email-forward" id="email-forward" class="icons__item" data-name="email-forward"><i data-icon="email-forward"></i> email-forward</a>
-          
-              <a href="#email-mark-read" id="email-mark-read" class="icons__item" data-name="email-mark-read"><i data-icon="email-mark-read"></i> email-mark-read</a>
-          
-              <a href="#email-mark-unread" id="email-mark-unread" class="icons__item" data-name="email-mark-unread"><i data-icon="email-mark-unread"></i> email-mark-unread</a>
-          
-              <a href="#email-move" id="email-move" class="icons__item" data-name="email-move"><i data-icon="email-move"></i> email-move</a>
-          
-              <a href="#email-reply" id="email-reply" class="icons__item" data-name="email-reply"><i data-icon="email-reply"></i> email-reply</a>
-          
-              <a href="#email" id="email" class="icons__item" data-name="email"><i data-icon="email"></i> email</a>
-          
-              <a href="#exclamation" id="exclamation" class="icons__item" data-name="exclamation"><i data-icon="exclamation"></i> exclamation</a>
-          
-              <a href="#expand" id="expand" class="icons__item" data-name="expand"><i data-icon="expand"></i> expand</a>
-          
-              <a href="#facebook" id="facebook" class="icons__item" data-name="facebook"><i data-icon="facebook"></i> facebook</a>
-          
-              <a href="#feedback" id="feedback" class="icons__item" data-name="feedback"><i data-icon="feedback"></i> feedback</a>
-          
-              <a href="#find" id="find" class="icons__item" data-name="find"><i data-icon="find"></i> find</a>
-          
-              <a href="#firefox" id="firefox" class="icons__item" data-name="firefox"><i data-icon="firefox"></i> firefox</a>
-          
-              <a href="#flag" id="flag" class="icons__item" data-name="flag"><i data-icon="flag"></i> flag</a>
-          
-              <a href="#flash-auto" id="flash-auto" class="icons__item" data-name="flash-auto"><i data-icon="flash-auto"></i> flash-auto</a>
-          
-              <a href="#flash-off" id="flash-off" class="icons__item" data-name="flash-off"><i data-icon="flash-off"></i> flash-off</a>
-          
-              <a href="#flash-on" id="flash-on" class="icons__item" data-name="flash-on"><i data-icon="flash-on"></i> flash-on</a>
-          
-              <a href="#focus-locked" id="focus-locked" class="icons__item" data-name="focus-locked"><i data-icon="focus-locked"></i> focus-locked</a>
-          
-              <a href="#focus-locking" id="focus-locking" class="icons__item" data-name="focus-locking"><i data-icon="focus-locking"></i> focus-locking</a>
-          
-              <a href="#forward" id="forward" class="icons__item" data-name="forward"><i data-icon="forward"></i> forward</a>
-          
-              <a href="#gesture" id="gesture" class="icons__item" data-name="gesture"><i data-icon="gesture"></i> gesture</a>
-          
-              <a href="#gmail" id="gmail" class="icons__item" data-name="gmail"><i data-icon="gmail"></i> gmail</a>
-          
-              <a href="#grid-circular" id="grid-circular" class="icons__item" data-name="grid-circular"><i data-icon="grid-circular"></i> grid-circular</a>
-          
-              <a href="#grid" id="grid" class="icons__item" data-name="grid"><i data-icon="grid"></i> grid</a>
-          
-              <a href="#hdr-boxed" id="hdr-boxed" class="icons__item" data-name="hdr-boxed"><i data-icon="hdr-boxed"></i> hdr-boxed</a>
-          
-              <a href="#hdr" id="hdr" class="icons__item" data-name="hdr"><i data-icon="hdr"></i> hdr</a>
-          
-              <a href="#help" id="help" class="icons__item" data-name="help"><i data-icon="help"></i> help</a>
-          
-              <a href="#homescreen" id="homescreen" class="icons__item" data-name="homescreen"><i data-icon="homescreen"></i> homescreen</a>
-          
-              <a href="#incoming-sms" id="incoming-sms" class="icons__item" data-name="incoming-sms"><i data-icon="incoming-sms"></i> incoming-sms</a>
-          
-              <a href="#info" id="info" class="icons__item" data-name="info"><i data-icon="info"></i> info</a>
-          
-              <a href="#keyboard" id="keyboard" class="icons__item" data-name="keyboard"><i data-icon="keyboard"></i> keyboard</a>
-          
-              <a href="#languages" id="languages" class="icons__item" data-name="languages"><i data-icon="languages"></i> languages</a>
-          
-              <a href="#link" id="link" class="icons__item" data-name="link"><i data-icon="link"></i> link</a>
-          
-              <a href="#location" id="location" class="icons__item" data-name="location"><i data-icon="location"></i> location</a>
-          
-              <a href="#lock" id="lock" class="icons__item" data-name="lock"><i data-icon="lock"></i> lock</a>
-          
-              <a href="#media-storage" id="media-storage" class="icons__item" data-name="media-storage"><i data-icon="media-storage"></i> media-storage</a>
-          
-              <a href="#menu" id="menu" class="icons__item" data-name="menu"><i data-icon="menu"></i> menu</a>
-          
-              <a href="#messages" id="messages" class="icons__item" data-name="messages"><i data-icon="messages"></i> messages</a>
-          
-              <a href="#mic" id="mic" class="icons__item" data-name="mic"><i data-icon="mic"></i> mic</a>
-          
-              <a href="#minus" id="minus" class="icons__item" data-name="minus"><i data-icon="minus"></i> minus</a>
-          
-              <a href="#moon" id="moon" class="icons__item" data-name="moon"><i data-icon="moon"></i> moon</a>
-          
-              <a href="#more" id="more" class="icons__item" data-name="more"><i data-icon="more"></i> more</a>
-          
-              <a href="#mute" id="mute" class="icons__item" data-name="mute"><i data-icon="mute"></i> mute</a>
-          
-              <a href="#network" id="network" class="icons__item" data-name="network"><i data-icon="network"></i> network</a>
-          
-              <a href="#nfc" id="nfc" class="icons__item" data-name="nfc"><i data-icon="nfc"></i> nfc</a>
-          
-              <a href="#no-favicon" id="no-favicon" class="icons__item" data-name="no-favicon"><i data-icon="no-favicon"></i> no-favicon</a>
-          
-              <a href="#notifications" id="notifications" class="icons__item" data-name="notifications"><i data-icon="notifications"></i> notifications</a>
-          
-              <a href="#outgoing-sms" id="outgoing-sms" class="icons__item" data-name="outgoing-sms"><i data-icon="outgoing-sms"></i> outgoing-sms</a>
-          
-              <a href="#outlook" id="outlook" class="icons__item" data-name="outlook"><i data-icon="outlook"></i> outlook</a>
-          
-              <a href="#pause" id="pause" class="icons__item" data-name="pause"><i data-icon="pause"></i> pause</a>
-          
-              <a href="#picture-size" id="picture-size" class="icons__item" data-name="picture-size"><i data-icon="picture-size"></i> picture-size</a>
-          
-              <a href="#play-circle" id="play-circle" class="icons__item" data-name="play-circle"><i data-icon="play-circle"></i> play-circle</a>
-          
-              <a href="#play" id="play" class="icons__item" data-name="play"><i data-icon="play"></i> play</a>
-          
-              <a href="#playlist" id="playlist" class="icons__item" data-name="playlist"><i data-icon="playlist"></i> playlist</a>
-          
-              <a href="#privacy" id="privacy" class="icons__item" data-name="privacy"><i data-icon="privacy"></i> privacy</a>
-          
-              <a href="#radio" id="radio" class="icons__item" data-name="radio"><i data-icon="radio"></i> radio</a>
-          
-              <a href="#recent-calls" id="recent-calls" class="icons__item" data-name="recent-calls"><i data-icon="recent-calls"></i> recent-calls</a>
-          
-              <a href="#reload" id="reload" class="icons__item" data-name="reload"><i data-icon="reload"></i> reload</a>
-          
-              <a href="#repeat-once" id="repeat-once" class="icons__item" data-name="repeat-once"><i data-icon="repeat-once"></i> repeat-once</a>
-          
-              <a href="#repeat" id="repeat" class="icons__item" data-name="repeat"><i data-icon="repeat"></i> repeat</a>
-          
-              <a href="#reply-all" id="reply-all" class="icons__item" data-name="reply-all"><i data-icon="reply-all"></i> reply-all</a>
-          
-              <a href="#rotate" id="rotate" class="icons__item" data-name="rotate"><i data-icon="rotate"></i> rotate</a>
-          
-              <a href="#scene" id="scene" class="icons__item" data-name="scene"><i data-icon="scene"></i> scene</a>
-          
-              <a href="#sd-card" id="sd-card" class="icons__item" data-name="sd-card"><i data-icon="sd-card"></i> sd-card</a>
-          
-              <a href="#search" id="search" class="icons__item" data-name="search"><i data-icon="search"></i> search</a>
-          
-              <a href="#secure-unverified" id="secure-unverified" class="icons__item" data-name="secure-unverified"><i data-icon="secure-unverified"></i> secure-unverified</a>
-          
-              <a href="#secure" id="secure" class="icons__item" data-name="secure"><i data-icon="secure"></i> secure</a>
-          
-              <a href="#seek-back" id="seek-back" class="icons__item" data-name="seek-back"><i data-icon="seek-back"></i> seek-back</a>
-          
-              <a href="#seek-forward" id="seek-forward" class="icons__item" data-name="seek-forward"><i data-icon="seek-forward"></i> seek-forward</a>
-          
-              <a href="#select" id="select" class="icons__item" data-name="select"><i data-icon="select"></i> select</a>
-          
-              <a href="#self-timer" id="self-timer" class="icons__item" data-name="self-timer"><i data-icon="self-timer"></i> self-timer</a>
-          
-              <a href="#send" id="send" class="icons__item" data-name="send"><i data-icon="send"></i> send</a>
-          
-              <a href="#settings" id="settings" class="icons__item" data-name="settings"><i data-icon="settings"></i> settings</a>
-          
-              <a href="#share" id="share" class="icons__item" data-name="share"><i data-icon="share"></i> share</a>
-          
-              <a href="#shuffle" id="shuffle" class="icons__item" data-name="shuffle"><i data-icon="shuffle"></i> shuffle</a>
-          
-              <a href="#sim-toolkit" id="sim-toolkit" class="icons__item" data-name="sim-toolkit"><i data-icon="sim-toolkit"></i> sim-toolkit</a>
-          
-              <a href="#sim" id="sim" class="icons__item" data-name="sim"><i data-icon="sim"></i> sim</a>
-          
-              <a href="#skip-back" id="skip-back" class="icons__item" data-name="skip-back"><i data-icon="skip-back"></i> skip-back</a>
-          
-              <a href="#skip-forward" id="skip-forward" class="icons__item" data-name="skip-forward"><i data-icon="skip-forward"></i> skip-forward</a>
-          
-              <a href="#sms" id="sms" class="icons__item" data-name="sms"><i data-icon="sms"></i> sms</a>
-          
-              <a href="#songs" id="songs" class="icons__item" data-name="songs"><i data-icon="songs"></i> songs</a>
-          
-              <a href="#sound-max" id="sound-max" class="icons__item" data-name="sound-max"><i data-icon="sound-max"></i> sound-max</a>
-          
-              <a href="#sound-min" id="sound-min" class="icons__item" data-name="sound-min"><i data-icon="sound-min"></i> sound-min</a>
-          
-              <a href="#sound-mute" id="sound-mute" class="icons__item" data-name="sound-mute"><i data-icon="sound-mute"></i> sound-mute</a>
-          
-              <a href="#sparkle" id="sparkle" class="icons__item" data-name="sparkle"><i data-icon="sparkle"></i> sparkle</a>
-          
-              <a href="#star-empty" id="star-empty" class="icons__item" data-name="star-empty"><i data-icon="star-empty"></i> star-empty</a>
-          
-              <a href="#star-full" id="star-full" class="icons__item" data-name="star-full"><i data-icon="star-full"></i> star-full</a>
-          
-              <a href="#stop" id="stop" class="icons__item" data-name="stop"><i data-icon="stop"></i> stop</a>
-          
-              <a href="#storage" id="storage" class="icons__item" data-name="storage"><i data-icon="storage"></i> storage</a>
-          
-              <a href="#switch" id="switch" class="icons__item" data-name="switch"><i data-icon="switch"></i> switch</a>
-          
-              <a href="#sync" id="sync" class="icons__item" data-name="sync"><i data-icon="sync"></i> sync</a>
-          
-              <a href="#tethering" id="tethering" class="icons__item" data-name="tethering"><i data-icon="tethering"></i> tethering</a>
-          
-              <a href="#tick-circle" id="tick-circle" class="icons__item" data-name="tick-circle"><i data-icon="tick-circle"></i> tick-circle</a>
-          
-              <a href="#tick" id="tick" class="icons__item" data-name="tick"><i data-icon="tick"></i> tick</a>
-          
-              <a href="#time" id="time" class="icons__item" data-name="time"><i data-icon="time"></i> time</a>
-          
-              <a href="#toggle-camera-front" id="toggle-camera-front" class="icons__item" data-name="toggle-camera-front"><i data-icon="toggle-camera-front"></i> toggle-camera-front</a>
-          
-              <a href="#toggle-camera-rear" id="toggle-camera-rear" class="icons__item" data-name="toggle-camera-rear"><i data-icon="toggle-camera-rear"></i> toggle-camera-rear</a>
-          
-              <a href="#topup-with-code" id="topup-with-code" class="icons__item" data-name="topup-with-code"><i data-icon="topup-with-code"></i> topup-with-code</a>
-          
-              <a href="#topup" id="topup" class="icons__item" data-name="topup"><i data-icon="topup"></i> topup</a>
-          
-              <a href="#twitter" id="twitter" class="icons__item" data-name="twitter"><i data-icon="twitter"></i> twitter</a>
-          
-              <a href="#undo-circular" id="undo-circular" class="icons__item" data-name="undo-circular"><i data-icon="undo-circular"></i> undo-circular</a>
-          
-              <a href="#undo" id="undo" class="icons__item" data-name="undo"><i data-icon="undo"></i> undo</a>
-          
-              <a href="#unlock" id="unlock" class="icons__item" data-name="unlock"><i data-icon="unlock"></i> unlock</a>
-          
-              <a href="#update-balance" id="update-balance" class="icons__item" data-name="update-balance"><i data-icon="update-balance"></i> update-balance</a>
-          
-              <a href="#usb" id="usb" class="icons__item" data-name="usb"><i data-icon="usb"></i> usb</a>
-          
-              <a href="#user" id="user" class="icons__item" data-name="user"><i data-icon="user"></i> user</a>
-          
-              <a href="#vibrate" id="vibrate" class="icons__item" data-name="vibrate"><i data-icon="vibrate"></i> vibrate</a>
-          
-              <a href="#video-size" id="video-size" class="icons__item" data-name="video-size"><i data-icon="video-size"></i> video-size</a>
-          
-              <a href="#video" id="video" class="icons__item" data-name="video"><i data-icon="video"></i> video</a>
-          
-              <a href="#voicemail" id="voicemail" class="icons__item" data-name="voicemail"><i data-icon="voicemail"></i> voicemail</a>
-          
-              <a href="#wallpaper" id="wallpaper" class="icons__item" data-name="wallpaper"><i data-icon="wallpaper"></i> wallpaper</a>
-          
-              <a href="#wand" id="wand" class="icons__item" data-name="wand"><i data-icon="wand"></i> wand</a>
-          
-              <a href="#wifi-1" id="wifi-1" class="icons__item" data-name="wifi-1"><i data-icon="wifi-1"></i> wifi-1</a>
-          
-              <a href="#wifi-2" id="wifi-2" class="icons__item" data-name="wifi-2"><i data-icon="wifi-2"></i> wifi-2</a>
-          
-              <a href="#wifi-3" id="wifi-3" class="icons__item" data-name="wifi-3"><i data-icon="wifi-3"></i> wifi-3</a>
-          
-              <a href="#wifi-4" id="wifi-4" class="icons__item" data-name="wifi-4"><i data-icon="wifi-4"></i> wifi-4</a>
-          
-              <a href="#wifi-5" id="wifi-5" class="icons__item" data-name="wifi-5"><i data-icon="wifi-5"></i> wifi-5</a>
-          
-              <a href="#wifi-permissions" id="wifi-permissions" class="icons__item" data-name="wifi-permissions"><i data-icon="wifi-permissions"></i> wifi-permissions</a>
-          
+        <a href="#accessibility" id="accessibility" class="icon" data-name="accessibility" data-icon="accessibility">
+        </a>
+
+        <a href="#add-contact" id="add-contact" class="icon" data-name="add-contact" data-icon="add-contact">
+        </a>
+
+        <a href="#add" id="add" class="icon" data-name="add" data-icon="add">
+        </a>
+
+        <a href="#airplane" id="airplane" class="icon" data-name="airplane" data-icon="airplane">
+        </a>
+
+        <a href="#alarm-full" id="alarm-full" class="icon" data-name="alarm-full" data-icon="alarm-full">
+        </a>
+
+        <a href="#alarm-stop" id="alarm-stop" class="icon" data-name="alarm-stop" data-icon="alarm-stop">
+        </a>
+
+        <a href="#alarm" id="alarm" class="icon" data-name="alarm" data-icon="alarm">
+        </a>
+
+        <a href="#album" id="album" class="icon" data-name="album" data-icon="album">
+        </a>
+
+        <a href="#all-day" id="all-day" class="icon" data-name="all-day" data-icon="all-day">
+        </a>
+
+        <a href="#arrow-back" id="arrow-back" class="icon" data-name="arrow-back" data-icon="arrow-back">
+        </a>
+
+        <a href="#arrow-forward" id="arrow-forward" class="icon" data-name="arrow-forward" data-icon="arrow-forward">
+        </a>
+
+        <a href="#artist" id="artist" class="icon" data-name="artist" data-icon="artist">
+        </a>
+
+        <a href="#attachment" id="attachment" class="icon" data-name="attachment" data-icon="attachment">
+        </a>
+
+        <a href="#back" id="back" class="icon" data-name="back" data-icon="back">
+        </a>
+
+        <a href="#battery-low" id="battery-low" class="icon" data-name="battery-low" data-icon="battery-low">
+        </a>
+
+        <a href="#battery-very-low" id="battery-very-low" class="icon" data-name="battery-very-low" data-icon="battery-very-low">
+        </a>
+
+        <a href="#battery" id="battery" class="icon" data-name="battery" data-icon="battery">
+        </a>
+
+        <a href="#bluetooth" id="bluetooth" class="icon" data-name="bluetooth" data-icon="bluetooth">
+        </a>
+
+        <a href="#brightness" id="brightness" class="icon" data-name="brightness" data-icon="brightness">
+        </a>
+
+        <a href="#calendar" id="calendar" class="icon" data-name="calendar" data-icon="calendar">
+        </a>
+
+        <a href="#call-bluetooth" id="call-bluetooth" class="icon" data-name="call-bluetooth" data-icon="call-bluetooth">
+        </a>
+
+        <a href="#call-hang-up" id="call-hang-up" class="icon" data-name="call-hang-up" data-icon="call-hang-up">
+        </a>
+
+        <a href="#call-hold" id="call-hold" class="icon" data-name="call-hold" data-icon="call-hold">
+        </a>
+
+        <a href="#call-incoming" id="call-incoming" class="icon" data-name="call-incoming" data-icon="call-incoming">
+        </a>
+
+        <a href="#call-merge" id="call-merge" class="icon" data-name="call-merge" data-icon="call-merge">
+        </a>
+
+        <a href="#call-missed" id="call-missed" class="icon" data-name="call-missed" data-icon="call-missed">
+        </a>
+
+        <a href="#call-outgoing" id="call-outgoing" class="icon" data-name="call-outgoing" data-icon="call-outgoing">
+        </a>
+
+        <a href="#call-reversed" id="call-reversed" class="icon" data-name="call-reversed" data-icon="call-reversed">
+        </a>
+
+        <a href="#call" id="call" class="icon" data-name="call" data-icon="call">
+        </a>
+
+        <a href="#camera" id="camera" class="icon" data-name="camera" data-icon="camera">
+        </a>
+
+        <a href="#change-wallpaper" id="change-wallpaper" class="icon" data-name="change-wallpaper" data-icon="change-wallpaper">
+        </a>
+
+        <a href="#clear-input" id="clear-input" class="icon" data-name="clear-input" data-icon="clear-input">
+        </a>
+
+        <a href="#close" id="close" class="icon" data-name="close" data-icon="close">
+        </a>
+
+        <a href="#compose" id="compose" class="icon" data-name="compose" data-icon="compose">
+        </a>
+
+        <a href="#contact-find" id="contact-find" class="icon" data-name="contact-find" data-icon="contact-find">
+        </a>
+
+        <a href="#contacts" id="contacts" class="icon" data-name="contacts" data-icon="contacts">
+        </a>
+
+        <a href="#crashed" id="crashed" class="icon" data-name="crashed" data-icon="crashed">
+        </a>
+
+        <a href="#crop-1x1" id="crop-1x1" class="icon" data-name="crop-1x1" data-icon="crop-1x1">
+        </a>
+
+        <a href="#crop-2x3" id="crop-2x3" class="icon" data-name="crop-2x3" data-icon="crop-2x3">
+        </a>
+
+        <a href="#crop-3x2" id="crop-3x2" class="icon" data-name="crop-3x2" data-icon="crop-3x2">
+        </a>
+
+        <a href="#crop-free" id="crop-free" class="icon" data-name="crop-free" data-icon="crop-free">
+        </a>
+
+        <a href="#crop" id="crop" class="icon" data-name="crop" data-icon="crop">
+        </a>
+
+        <a href="#data" id="data" class="icon" data-name="data" data-icon="data">
+        </a>
+
+        <a href="#delete" id="delete" class="icon" data-name="delete" data-icon="delete">
+        </a>
+
+        <a href="#developer" id="developer" class="icon" data-name="developer" data-icon="developer">
+        </a>
+
+        <a href="#device-info" id="device-info" class="icon" data-name="device-info" data-icon="device-info">
+        </a>
+
+        <a href="#dialpad" id="dialpad" class="icon" data-name="dialpad" data-icon="dialpad">
+        </a>
+
+        <a href="#dismiss-keyboard" id="dismiss-keyboard" class="icon" data-name="dismiss-keyboard" data-icon="dismiss-keyboard">
+        </a>
+
+        <a href="#do-not-track" id="do-not-track" class="icon" data-name="do-not-track" data-icon="do-not-track">
+        </a>
+
+        <a href="#download" id="download" class="icon" data-name="download" data-icon="download">
+        </a>
+
+        <a href="#edit-contact" id="edit-contact" class="icon" data-name="edit-contact" data-icon="edit-contact">
+        </a>
+
+        <a href="#edit-image" id="edit-image" class="icon" data-name="edit-image" data-icon="edit-image">
+        </a>
+
+        <a href="#edit" id="edit" class="icon" data-name="edit" data-icon="edit">
+        </a>
+
+        <a href="#email-forward" id="email-forward" class="icon" data-name="email-forward" data-icon="email-forward">
+        </a>
+
+        <a href="#email-mark-read" id="email-mark-read" class="icon" data-name="email-mark-read" data-icon="email-mark-read">
+        </a>
+
+        <a href="#email-mark-unread" id="email-mark-unread" class="icon" data-name="email-mark-unread" data-icon="email-mark-unread">
+        </a>
+
+        <a href="#email-move" id="email-move" class="icon" data-name="email-move" data-icon="email-move">
+        </a>
+
+        <a href="#email-reply" id="email-reply" class="icon" data-name="email-reply" data-icon="email-reply">
+        </a>
+
+        <a href="#email" id="email" class="icon" data-name="email" data-icon="email">
+        </a>
+
+        <a href="#exclamation" id="exclamation" class="icon" data-name="exclamation" data-icon="exclamation">
+        </a>
+
+        <a href="#expand" id="expand" class="icon" data-name="expand" data-icon="expand">
+        </a>
+
+        <a href="#facebook" id="facebook" class="icon" data-name="facebook" data-icon="facebook">
+        </a>
+
+        <a href="#feedback" id="feedback" class="icon" data-name="feedback" data-icon="feedback">
+        </a>
+
+        <a href="#find" id="find" class="icon" data-name="find" data-icon="find">
+        </a>
+
+        <a href="#firefox" id="firefox" class="icon" data-name="firefox" data-icon="firefox">
+        </a>
+
+        <a href="#flag" id="flag" class="icon" data-name="flag" data-icon="flag">
+        </a>
+
+        <a href="#flash-auto" id="flash-auto" class="icon" data-name="flash-auto" data-icon="flash-auto">
+        </a>
+
+        <a href="#flash-off" id="flash-off" class="icon" data-name="flash-off" data-icon="flash-off">
+        </a>
+
+        <a href="#flash-on" id="flash-on" class="icon" data-name="flash-on" data-icon="flash-on">
+        </a>
+
+        <a href="#focus-locked" id="focus-locked" class="icon" data-name="focus-locked" data-icon="focus-locked">
+        </a>
+
+        <a href="#focus-locking" id="focus-locking" class="icon" data-name="focus-locking" data-icon="focus-locking">
+        </a>
+
+        <a href="#forward" id="forward" class="icon" data-name="forward" data-icon="forward">
+        </a>
+
+        <a href="#gesture" id="gesture" class="icon" data-name="gesture" data-icon="gesture">
+        </a>
+
+        <a href="#gmail" id="gmail" class="icon" data-name="gmail" data-icon="gmail">
+        </a>
+
+        <a href="#grid-circular" id="grid-circular" class="icon" data-name="grid-circular" data-icon="grid-circular">
+        </a>
+
+        <a href="#grid" id="grid" class="icon" data-name="grid" data-icon="grid">
+        </a>
+
+        <a href="#hdr-boxed" id="hdr-boxed" class="icon" data-name="hdr-boxed" data-icon="hdr-boxed">
+        </a>
+
+        <a href="#hdr" id="hdr" class="icon" data-name="hdr" data-icon="hdr">
+        </a>
+
+        <a href="#help" id="help" class="icon" data-name="help" data-icon="help">
+        </a>
+
+        <a href="#homescreen" id="homescreen" class="icon" data-name="homescreen" data-icon="homescreen">
+        </a>
+
+        <a href="#incoming-sms" id="incoming-sms" class="icon" data-name="incoming-sms" data-icon="incoming-sms">
+        </a>
+
+        <a href="#info" id="info" class="icon" data-name="info" data-icon="info">
+        </a>
+
+        <a href="#keyboard" id="keyboard" class="icon" data-name="keyboard" data-icon="keyboard">
+        </a>
+
+        <a href="#languages" id="languages" class="icon" data-name="languages" data-icon="languages">
+        </a>
+
+        <a href="#link" id="link" class="icon" data-name="link" data-icon="link">
+        </a>
+
+        <a href="#location" id="location" class="icon" data-name="location" data-icon="location">
+        </a>
+
+        <a href="#lock" id="lock" class="icon" data-name="lock" data-icon="lock">
+        </a>
+
+        <a href="#media-storage" id="media-storage" class="icon" data-name="media-storage" data-icon="media-storage">
+        </a>
+
+        <a href="#menu" id="menu" class="icon" data-name="menu" data-icon="menu">
+        </a>
+
+        <a href="#messages" id="messages" class="icon" data-name="messages" data-icon="messages">
+        </a>
+
+        <a href="#mic" id="mic" class="icon" data-name="mic" data-icon="mic">
+        </a>
+
+        <a href="#minus" id="minus" class="icon" data-name="minus" data-icon="minus">
+        </a>
+
+        <a href="#moon" id="moon" class="icon" data-name="moon" data-icon="moon">
+        </a>
+
+        <a href="#more" id="more" class="icon" data-name="more" data-icon="more">
+        </a>
+
+        <a href="#mute" id="mute" class="icon" data-name="mute" data-icon="mute">
+        </a>
+
+        <a href="#network" id="network" class="icon" data-name="network" data-icon="network">
+        </a>
+
+        <a href="#nfc" id="nfc" class="icon" data-name="nfc" data-icon="nfc">
+        </a>
+
+        <a href="#no-favicon" id="no-favicon" class="icon" data-name="no-favicon" data-icon="no-favicon">
+        </a>
+
+        <a href="#notifications" id="notifications" class="icon" data-name="notifications" data-icon="notifications">
+        </a>
+
+        <a href="#outgoing-sms" id="outgoing-sms" class="icon" data-name="outgoing-sms" data-icon="outgoing-sms">
+        </a>
+
+        <a href="#outlook" id="outlook" class="icon" data-name="outlook" data-icon="outlook">
+        </a>
+
+        <a href="#pause" id="pause" class="icon" data-name="pause" data-icon="pause">
+        </a>
+
+        <a href="#picture-size" id="picture-size" class="icon" data-name="picture-size" data-icon="picture-size">
+        </a>
+
+        <a href="#play-circle" id="play-circle" class="icon" data-name="play-circle" data-icon="play-circle">
+        </a>
+
+        <a href="#play" id="play" class="icon" data-name="play" data-icon="play">
+        </a>
+
+        <a href="#playlist" id="playlist" class="icon" data-name="playlist" data-icon="playlist">
+        </a>
+
+        <a href="#privacy" id="privacy" class="icon" data-name="privacy" data-icon="privacy">
+        </a>
+
+        <a href="#radio" id="radio" class="icon" data-name="radio" data-icon="radio">
+        </a>
+
+        <a href="#recent-calls" id="recent-calls" class="icon" data-name="recent-calls" data-icon="recent-calls">
+        </a>
+
+        <a href="#reload" id="reload" class="icon" data-name="reload" data-icon="reload">
+        </a>
+
+        <a href="#repeat-once" id="repeat-once" class="icon" data-name="repeat-once" data-icon="repeat-once">
+        </a>
+
+        <a href="#repeat" id="repeat" class="icon" data-name="repeat" data-icon="repeat">
+        </a>
+
+        <a href="#reply-all" id="reply-all" class="icon" data-name="reply-all" data-icon="reply-all">
+        </a>
+
+        <a href="#rotate" id="rotate" class="icon" data-name="rotate" data-icon="rotate">
+        </a>
+
+        <a href="#scene" id="scene" class="icon" data-name="scene" data-icon="scene">
+        </a>
+
+        <a href="#sd-card" id="sd-card" class="icon" data-name="sd-card" data-icon="sd-card">
+        </a>
+
+        <a href="#search" id="search" class="icon" data-name="search" data-icon="search">
+        </a>
+
+        <a href="#secure-unverified" id="secure-unverified" class="icon" data-name="secure-unverified" data-icon="secure-unverified">
+        </a>
+
+        <a href="#secure" id="secure" class="icon" data-name="secure" data-icon="secure">
+        </a>
+
+        <a href="#seek-back" id="seek-back" class="icon" data-name="seek-back" data-icon="seek-back">
+        </a>
+
+        <a href="#seek-forward" id="seek-forward" class="icon" data-name="seek-forward" data-icon="seek-forward">
+        </a>
+
+        <a href="#select" id="select" class="icon" data-name="select" data-icon="select">
+        </a>
+
+        <a href="#self-timer" id="self-timer" class="icon" data-name="self-timer" data-icon="self-timer">
+        </a>
+
+        <a href="#send" id="send" class="icon" data-name="send" data-icon="send">
+        </a>
+
+        <a href="#settings" id="settings" class="icon" data-name="settings" data-icon="settings">
+        </a>
+
+        <a href="#share" id="share" class="icon" data-name="share" data-icon="share">
+        </a>
+
+        <a href="#shuffle" id="shuffle" class="icon" data-name="shuffle" data-icon="shuffle">
+        </a>
+
+        <a href="#sim-toolkit" id="sim-toolkit" class="icon" data-name="sim-toolkit" data-icon="sim-toolkit">
+        </a>
+
+        <a href="#sim" id="sim" class="icon" data-name="sim" data-icon="sim">
+        </a>
+
+        <a href="#skip-back" id="skip-back" class="icon" data-name="skip-back" data-icon="skip-back">
+        </a>
+
+        <a href="#skip-forward" id="skip-forward" class="icon" data-name="skip-forward" data-icon="skip-forward">
+        </a>
+
+        <a href="#sms" id="sms" class="icon" data-name="sms" data-icon="sms">
+        </a>
+
+        <a href="#songs" id="songs" class="icon" data-name="songs" data-icon="songs">
+        </a>
+
+        <a href="#sound-max" id="sound-max" class="icon" data-name="sound-max" data-icon="sound-max">
+        </a>
+
+        <a href="#sound-min" id="sound-min" class="icon" data-name="sound-min" data-icon="sound-min">
+        </a>
+
+        <a href="#sound-mute" id="sound-mute" class="icon" data-name="sound-mute" data-icon="sound-mute">
+        </a>
+
+        <a href="#sparkle" id="sparkle" class="icon" data-name="sparkle" data-icon="sparkle">
+        </a>
+
+        <a href="#star-empty" id="star-empty" class="icon" data-name="star-empty" data-icon="star-empty">
+        </a>
+
+        <a href="#star-full" id="star-full" class="icon" data-name="star-full" data-icon="star-full">
+        </a>
+
+        <a href="#stop" id="stop" class="icon" data-name="stop" data-icon="stop">
+        </a>
+
+        <a href="#storage" id="storage" class="icon" data-name="storage" data-icon="storage">
+        </a>
+
+        <a href="#switch" id="switch" class="icon" data-name="switch" data-icon="switch">
+        </a>
+
+        <a href="#sync" id="sync" class="icon" data-name="sync" data-icon="sync">
+        </a>
+
+        <a href="#tethering" id="tethering" class="icon" data-name="tethering" data-icon="tethering">
+        </a>
+
+        <a href="#tick-circle" id="tick-circle" class="icon" data-name="tick-circle" data-icon="tick-circle">
+        </a>
+
+        <a href="#tick" id="tick" class="icon" data-name="tick" data-icon="tick">
+        </a>
+
+        <a href="#time" id="time" class="icon" data-name="time" data-icon="time">
+        </a>
+
+        <a href="#toggle-camera-front" id="toggle-camera-front" class="icon" data-name="toggle-camera-front" data-icon="toggle-camera-front">
+        </a>
+
+        <a href="#toggle-camera-rear" id="toggle-camera-rear" class="icon" data-name="toggle-camera-rear" data-icon="toggle-camera-rear">
+        </a>
+
+        <a href="#topup-with-code" id="topup-with-code" class="icon" data-name="topup-with-code" data-icon="topup-with-code">
+        </a>
+
+        <a href="#topup" id="topup" class="icon" data-name="topup" data-icon="topup">
+        </a>
+
+        <a href="#twitter" id="twitter" class="icon" data-name="twitter" data-icon="twitter">
+        </a>
+
+        <a href="#undo-circular" id="undo-circular" class="icon" data-name="undo-circular" data-icon="undo-circular">
+        </a>
+
+        <a href="#undo" id="undo" class="icon" data-name="undo" data-icon="undo">
+        </a>
+
+        <a href="#unlock" id="unlock" class="icon" data-name="unlock" data-icon="unlock">
+        </a>
+
+        <a href="#update-balance" id="update-balance" class="icon" data-name="update-balance" data-icon="update-balance">
+        </a>
+
+        <a href="#usb" id="usb" class="icon" data-name="usb" data-icon="usb">
+        </a>
+
+        <a href="#user" id="user" class="icon" data-name="user" data-icon="user">
+        </a>
+
+        <a href="#vibrate" id="vibrate" class="icon" data-name="vibrate" data-icon="vibrate">
+        </a>
+
+        <a href="#video-size" id="video-size" class="icon" data-name="video-size" data-icon="video-size">
+        </a>
+
+        <a href="#video" id="video" class="icon" data-name="video" data-icon="video">
+        </a>
+
+        <a href="#voicemail" id="voicemail" class="icon" data-name="voicemail" data-icon="voicemail">
+        </a>
+
+        <a href="#wallpaper" id="wallpaper" class="icon" data-name="wallpaper" data-icon="wallpaper">
+        </a>
+
+        <a href="#wand" id="wand" class="icon" data-name="wand" data-icon="wand">
+        </a>
+
+        <a href="#wifi-1" id="wifi-1" class="icon" data-name="wifi-1" data-icon="wifi-1">
+        </a>
+
+        <a href="#wifi-2" id="wifi-2" class="icon" data-name="wifi-2" data-icon="wifi-2">
+        </a>
+
+        <a href="#wifi-3" id="wifi-3" class="icon" data-name="wifi-3" data-icon="wifi-3">
+        </a>
+
+        <a href="#wifi-4" id="wifi-4" class="icon" data-name="wifi-4" data-icon="wifi-4">
+        </a>
+
+        <a href="#wifi-5" id="wifi-5" class="icon" data-name="wifi-5" data-icon="wifi-5">
+        </a>
+
+        <a href="#wifi-permissions" id="wifi-permissions" class="icon" data-name="wifi-permissions" data-icon="wifi-permissions">
+        </a>
+
       </div>
-
-      
-      <div class="ligature-icons" style="display:none">
-          
-              accessibility
-          
-              add-contact
-          
-              add
-          
-              airplane
-          
-              alarm-full
-          
-              alarm-stop
-          
-              alarm
-          
-              album
-          
-              all-day
-          
-              arrow-back
-          
-              arrow-forward
-          
-              artist
-          
-              attachment
-          
-              back
-          
-              battery-low
-          
-              battery-very-low
-          
-              battery
-          
-              bluetooth
-          
-              brightness
-          
-              calendar
-          
-              call-bluetooth
-          
-              call-hang-up
-          
-              call-hold
-          
-              call-incoming
-          
-              call-merge
-          
-              call-missed
-          
-              call-outgoing
-          
-              call-reversed
-          
-              call
-          
-              camera
-          
-              change-wallpaper
-          
-              clear-input
-          
-              close
-          
-              compose
-          
-              contact-find
-          
-              contacts
-          
-              crashed
-          
-              crop-1x1
-          
-              crop-2x3
-          
-              crop-3x2
-          
-              crop-free
-          
-              crop
-          
-              data
-          
-              delete
-          
-              developer
-          
-              device-info
-          
-              dialpad
-          
-              dismiss-keyboard
-          
-              do-not-track
-          
-              download
-          
-              edit-contact
-          
-              edit-image
-          
-              edit
-          
-              email-forward
-          
-              email-mark-read
-          
-              email-mark-unread
-          
-              email-move
-          
-              email-reply
-          
-              email
-          
-              exclamation
-          
-              expand
-          
-              facebook
-          
-              feedback
-          
-              find
-          
-              firefox
-          
-              flag
-          
-              flash-auto
-          
-              flash-off
-          
-              flash-on
-          
-              focus-locked
-          
-              focus-locking
-          
-              forward
-          
-              gesture
-          
-              gmail
-          
-              grid-circular
-          
-              grid
-          
-              hdr-boxed
-          
-              hdr
-          
-              help
-          
-              homescreen
-          
-              incoming-sms
-          
-              info
-          
-              keyboard
-          
-              languages
-          
-              link
-          
-              location
-          
-              lock
-          
-              media-storage
-          
-              menu
-          
-              messages
-          
-              mic
-          
-              minus
-          
-              moon
-          
-              more
-          
-              mute
-          
-              network
-          
-              nfc
-          
-              no-favicon
-          
-              notifications
-          
-              outgoing-sms
-          
-              outlook
-          
-              pause
-          
-              picture-size
-          
-              play-circle
-          
-              play
-          
-              playlist
-          
-              privacy
-          
-              radio
-          
-              recent-calls
-          
-              reload
-          
-              repeat-once
-          
-              repeat
-          
-              reply-all
-          
-              rotate
-          
-              scene
-          
-              sd-card
-          
-              search
-          
-              secure-unverified
-          
-              secure
-          
-              seek-back
-          
-              seek-forward
-          
-              select
-          
-              self-timer
-          
-              send
-          
-              settings
-          
-              share
-          
-              shuffle
-          
-              sim-toolkit
-          
-              sim
-          
-              skip-back
-          
-              skip-forward
-          
-              sms
-          
-              songs
-          
-              sound-max
-          
-              sound-min
-          
-              sound-mute
-          
-              sparkle
-          
-              star-empty
-          
-              star-full
-          
-              stop
-          
-              storage
-          
-              switch
-          
-              sync
-          
-              tethering
-          
-              tick-circle
-          
-              tick
-          
-              time
-          
-              toggle-camera-front
-          
-              toggle-camera-rear
-          
-              topup-with-code
-          
-              topup
-          
-              twitter
-          
-              undo-circular
-          
-              undo
-          
-              unlock
-          
-              update-balance
-          
-              usb
-          
-              user
-          
-              vibrate
-          
-              video-size
-          
-              video
-          
-              voicemail
-          
-              wallpaper
-          
-              wand
-          
-              wifi-1
-          
-              wifi-2
-          
-              wifi-3
-          
-              wifi-4
-          
-              wifi-5
-          
-              wifi-permissions
-          
-      </div>
-      
-
-
-      <script>
-      (function() {
-          document.getElementById('icons').onclick = function(e) {
-              e = e || window.event;
-              var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
-              document.getElementById('name').innerHTML = name;
-              document.getElementById('name2').innerHTML = name;
-          }
-      })();
-      </script>
   </body>
 </html>

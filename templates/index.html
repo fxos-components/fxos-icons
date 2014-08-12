@@ -4,85 +4,72 @@
     <meta charset="utf-8">
     <title><%= fontBaseName %></title>
     <style>
-    body {
-        margin:0;
-        padding:10px 20px;
-        background:#fff;
-        color:#222;
-        }
-    h1, div, footer {
-        font-family:"Helvetica Neue", Arial, sans-serif;
-        }
-    h1 {
-        margin:20px 0 10px;
-        font-size: 30px;
-        font-weight:normal;
-        }
-    .icons__item {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-      }
-    .icons__item,
-    .icons__item i {
-        line-height: 30px;
-        cursor:pointer;
-        }
-    .icons__item:hover,
-    .icons__item:target {
-        font-size: 2em;
-        color:#3c90be;
-        }
-    .icons__item i {
-        position: static;
-        padding-right: 20px;
-        text-rendering:optimizeLegibility;
-        -webkit-font-smoothing:antialiased;
-        -moz-osx-font-smoothing:grayscale;
-    }
 
-    footer {
-        margin-top:40px;
-        font-size:14px;
-        color:#999;
+        * {
+            margin: 0;
+            padding: 0;
         }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background: #eee;
+        }
+
+      .icon {
+        display: block;
+        float: left;
+        color: inherit;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        border: solid 1px #eee;
+        text-align: center;
+        margin: -1px;
+        background: #fff;
+        line-height: 1;
+      }
+
+      .icon:target {
+        background: #00caf2;
+      }
+
+      .usage {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+      }
+
+      h1 {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 140px;
+        color: #E5E5E5;
+        -moz-user-select: none;
+        letter-spacing: -2px;
+        text-shadow:
+            -1px -1px 0px rgba(0,0,0,0.1),
+            1px 1px 0px rgba(255,255,255,0.5)
+      }
+
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <h1>Usage</h1>
-      <pre><code>&lt;i data-icon=&quot;<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
-      <% if (addLigatures) { %>
-      <pre><code>&lt;i class=&quot;ligature-icons&quot;&gt;<span id="name2">name</span>&lt;/i&gt;</code></pre>
+      <h1>Gaia Icons</h1>
+
+      <div class="icons">
+      <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+        <a href="#<%= glyph %>" id="<%= glyph %>" class="icon" data-name="<%= glyph %>" data-icon="<%= glyph %>">
+        </a>
       <% } %>
-      <p>(Click on an icon to get the class name)</p>
-
-      <h1><%= fontBaseName %></h1>
-
-      <div class="icons" id="icons">
-          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-              <a href="#<%= glyph %>" id="<%= glyph %>" class="icons__item" data-name="<%= glyph %>"><i data-icon="<%= glyph %>"></i> <%= glyph %></a>
-          <% } %>
       </div>
-
-      <% if (addLigatures) { %>
-      <div class="ligature-icons" style="display:none">
-          <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx]; %>
-              <%= glyph %>
-          <% } %>
-      </div>
-      <% } %>
-
-
-      <script>
-      (function() {
-          document.getElementById('icons').onclick = function(e) {
-              e = e || window.event;
-              var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
-              document.getElementById('name').innerHTML = name;
-              document.getElementById('name2').innerHTML = name;
-          }
-      })();
-      </script>
   </body>
 </html>
