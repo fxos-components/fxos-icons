@@ -4,33 +4,40 @@
     <meta charset="utf-8">
     <title><%= fontBaseName %></title>
     <style>
-
       * {
-          margin: 0;
-          padding: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
       }
 
       body {
-          font-family: 'Helvetica', sans-serif;
-          background: #eee;
+        font-family: 'Helvetica', sans-serif;
+        background: #eee;
+        color: #444;
       }
 
       section {
-          padding: 20px;
+        padding: 20px;
       }
 
       section a {
+        box-sizing: content-box;
         display: block;
         float: left;
         color: inherit;
-        width: 30px;
-        height: 30px;
+        width: 3rem;
+        height: 3rem;
         text-decoration: none;
         border: solid 1px #eee;
         text-align: center;
         margin: -1px;
         background: #fff;
         line-height: 1;
+        color: #222;
       }
 
       section a:hover {
@@ -41,6 +48,10 @@
         background: #00caf2;
         transform: scale(2);
         box-shadow: 0px 4px 8px rgba(0,0,0,0.24);
+      }
+
+      #show-view-boxes:checked ~ section a:before {
+        background: rgba(0,0,0,0.12);
       }
 
       h1 {
@@ -60,17 +71,55 @@
           1px 1px 0px rgba(255,255,255,0.5)
       }
 
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        border-top: solid 1px #ddd;
+        text-align: right;
+        font-size: 13px;
+      }
+
+      footer label {
+        display: block;
+        float: right;
+        padding: 0.7rem 1rem;
+        background: rgba(0,0,0,0.3);
+        border-radius: 4px;
+        cursor: pointer;
+        color: #fff;
+        -moz-user-select: none;
+             user-select: none;
+      }
+
+      footer label:hover {
+        background: rgba(0,0,0,0.15);
+      }
+
+      #show-view-boxes:checked ~ footer label[for="show-view-boxes"] {
+        background: #00caf2;
+        color: #fff;
+      }
+
+      #show-view-boxes {
+        display: none;
+      }
     </style>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <a href="#"><h1>Gaia Icons</h1></a>
-
-      <section>
-      <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-        <a href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
-        </a>
-      <% } %>
-      </section>
+    <input id="show-view-boxes" type="checkbox" />
+    <a href="#"><h1>Gaia Icons</h1></a>
+    <section>
+    <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+      <a href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>">
+      </a>
+    <% } %>
+    </section>
+    <footer>
+      <label for="show-view-boxes">Show View Boxes</label>
+    </footer>
   </body>
 </html>
