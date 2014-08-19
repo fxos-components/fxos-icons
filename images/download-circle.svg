@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="30"
+   height="30"
+   viewBox="0 0 30 30"
+   id="svg2">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <path
+     d="M 15,3 C 8.373,3 3,8.372 3,15 3,21.628 8.373,27 15,27 21.628,27 27,21.628 27,15 27,8.372 21.628,3 15,3 z m -4.76,6.906 0.56,0.56 c 0.008,0.008 0.008,0.02 0.018,0.032 l 4.132,4.13 c 0.13,0.13 0.34,0.13 0.47,0 l 4.13,-4.13 c 0.01,-0.01 0.01,-0.025 0.02,-0.037 l 0.56,-0.56 c 0.764,0.11 1.496,0.24 2.204,0.38 -0.08,0.26 -0.21,0.51 -0.413,0.71 l -5.44,5.46 c -0.71,0.71 -1.85,0.71 -2.55,0 l -5.46,-5.46 c -0.2,-0.2 -0.33,-0.44 -0.41,-0.7 0.71,-0.15 1.44,-0.28 2.2,-0.38 z M 20.576,20.512 H 9.76 c -0.866,0 -1.603,-0.628 -1.9,-1.514 h 14.616 c -0.296,0.886 -1.036,1.514 -1.9,1.514 z"
+     inkscape:connector-curvature="0"
+     id="path4" />
+</svg>
