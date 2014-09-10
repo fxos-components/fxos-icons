@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="30"
-   height="30"
-   viewBox="0 0 30 30"
-   id="svg2">
-  <metadata
-     id="metadata10">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs8" />
-  <path
-     d="M 29.7,12 H 27.3 C 27,10.4 26.5,9.2 25.9,9 H 1.8 C 0.8,9 0,11.7 0,15 c 0,3.3 0.8,6 1.8,6 H 26 c 0.6,-0.2 1.1,-1.4 1.4,-3 h 2.4 C 30,17.1 30,16.1 30,15 30,13.9 29.9,12.9 29.7,12 z M 26,20 H 2 V 10 H 26 V 20 z M 13.9,11.6 c -1,0 -1.8,0.4 -2.3,1.1 l 1,0.8 c 0.4,-0.4 0.8,-0.6 1.2,-0.6 0.4,0 0.7,0.2 0.7,0.6 0,0.8 -1.6,0.7 -1.6,2.4 v 0.3 h 1.4 V 16 c 0,-1.1 1.8,-1 1.8,-2.6 0,-1 -0.8,-1.8 -2.2,-1.8 z M 13.6,17 c -0.5,0 -0.9,0.4 -0.9,0.9 0,0.5 0.4,0.9 0.9,0.9 0.5,0 0.9,-0.4 0.9,-0.9 0,-0.4 -0.4,-0.9 -0.9,-0.9 z"
-     inkscape:connector-curvature="0"
-     id="path4" />
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="battery-unknown" sketch:type="MSLayerGroup" transform="translate(3.000000, 10.000000)">
+                <path d="M10.2800032,3.08333 L11.08,3.75 C11.3999968,3.41667 11.7200032,3.25 12.04,3.25 C12.3599968,3.25 12.5999968,3.41667 12.5999968,3.75 C12.5999968,4.41667 11.32,4.33333 11.32,5.75 L11.32,6 L12.4400032,6 L12.4400032,5.83333 C12.4400032,4.91667 13.8800032,5 13.8800032,3.66667 C13.8800032,2.83333 13.24,2.16667 12.1199968,2.16667 C11.32,2.16667 10.6799968,2.5 10.2800032,3.08333 Z M11.8799968,6.66667 C11.4800032,6.66667 11.1599968,7 11.1599968,7.41667 C11.1599968,7.83333 11.4800032,8.16667 11.8799968,8.16667 C12.28,8.16667 12.5999968,7.83333 12.5999968,7.41667 C12.5999968,7.08333 12.28,6.66667 11.8799968,6.66667 L11.8799968,6.66667 Z" id="path4" sketch:type="MSShapeGroup"></path>
+                <path d="M23.7603,2.50003906 L21.84032,2.50003906 C21.60029,1.16668212 21.20032,0.166726909 20.72031,0 L1.440011,0 C0.640005,0 0,2.24997995 0,4.99996354 C0,7.74994714 0.63976,10 1.439766,10 L20.80016,10 C21.28007,9.83339809 21.68014,8.83346371 21.92005,7.50001302 L23.84006,7.50001302 C24,6.74999193 24,5.91687821 24,5.00002604 C24,4.08317387 23.92,3.25007057 23.75978,2.50003906 L23.7603,2.50003906 Z M21,9 L2,9 L2,1 L21,1 L21,9 L21,9 Z" id="path4-2" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
 </svg>
