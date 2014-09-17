@@ -1,4 +1,4 @@
-(function(define){'use strict';define(function(require,exports,module){
+(function(define){define(function(require,exports,module){
 
 /**
  * Exports
@@ -24,7 +24,7 @@ function isLoaded() {
     document.documentElement.classList.contains('gaia-icons-loaded');
 }
 
-});})((function(n,w){'use strict';return typeof define=='function'&&define.amd?
-define:typeof module=='object'?function(c){c(require,exports,module);}:
-function(c){var m={exports:{}},r=function(n){return w[n];};
-w[n]=c(r,m.exports,m)||m.exports;};})('gaia-icons',this));
+});})(typeof define=='function'&&define.amd?define
+:(function(n,w){return typeof module=='object'?function(c){
+c(require,exports,module);}:function(c){var m={exports:{}};c(function(n){
+return w[n];},m.exports,m);w[n]=m.exports;};})('gaia-icons',this));
