@@ -1,13 +1,16 @@
 (function(define){define(function(require,exports,module){
+/*jshint laxbreak:true*/
 
 /**
  * Exports
  */
 
-exports = module.exports = function(base) {
-  var url = base + 'gaia-icons/style.css';
-  if (!isLoaded()) { load(url); }
-};
+var base = window.GAIA_ICONS_BASE_URL
+  || window.COMPONENTS_BASE_URL
+  || 'bower_components/';
+
+// Load it if it's not already loaded
+if (!isLoaded()) { load(base + 'gaia-icons/style.css'); }
 
 function load(href) {
   var link = document.createElement('link');
