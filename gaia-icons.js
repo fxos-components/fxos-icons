@@ -10,7 +10,7 @@ var base = window.GAIA_ICONS_BASE_URL
   || 'bower_components/';
 
 // Load it if it's not already loaded
-if (!isLoaded()) { load(base + 'gaia-icons/style.css'); }
+if (!isLoaded()) { load(base + 'gaia-icons/gaia-icons.css'); }
 
 function load(href) {
   var link = document.createElement('link');

@@ -10,16 +10,14 @@ module.exports = function(grunt) {
       // Creates a stylesheet with embedded font
       embedded: {
         src: 'images/*.svg',
-        dest: 'fonts/',
-        destCss: './',
-        destHtml: './',
+        dest: 'output/embedded/',
         options: {
           font: 'gaia-icons',
           types: 'woff',
           embed: 'woff',
           ligatures: true,
           hashes: false,
-          template: 'templates/style.css',
+          template: 'templates/gaia-icons.css',
           htmlDemoTemplate: 'templates/index.html'
         }
       },
@@ -27,13 +25,13 @@ module.exports = function(grunt) {
       // Creates font files
       files: {
         src: 'images/*.svg',
-        dest: 'fonts/',
-        destCss: './',
-        destHtml: './',
+        dest: 'output/files/fonts/',
+        destCss: 'output/files/',
+        destHtml: 'output/files/',
         options: {
           font: 'gaia-icons',
           types: 'ttf,woff,eot',
-          template: 'templates/style.css',
+          template: 'templates/gaia-icons.css',
           htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
           hashes: false,
@@ -51,22 +49,27 @@ module.exports = function(grunt) {
     // doesn't let us specify filenames).
     rename: {
       'css-embedded': {
-        src: 'gaia-icons.css',
-        dest: 'style-embedded.css',
+        src: 'output/embedded/gaia-icons.css',
+        dest: 'gaia-icons-embedded.css',
+      },
+
+      css: {
+        src: 'output/files/gaia-icons.css',
+        dest: 'gaia-icons.css',
+      },
+
+      fonts: {
+        src: 'output/files/fonts/*',
+        dest: 'fonts/'
       },
 
       example: {
-        src: 'gaia-icons.html',
+        src: 'output/files/gaia-icons.html',
         dest: 'index.html'
       }
     },
 
-    clean: [
-      'fonts/gaia-icons.css',
-      'fonts/gaia-icons.html',
-      'gaia-icons.html',
-      'gaia-icons.css'
-    ]
+    clean: ['output']
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -74,10 +77,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-rename');
 
   grunt.registerTask('default', [
-    'webfont:embedded',
-    'rename:css-embedded',
     'webfont:files',
-    'rename:example',
+    'webfont:embedded',
+    'rename',
     'clean'
   ]);
 };
