@@ -59,8 +59,8 @@ module.exports = function(grunt) {
       },
 
       fonts: {
-        src: 'output/files/fonts/*',
-        dest: 'fonts/'
+        src: 'output/files/fonts',
+        dest: 'fonts'
       },
 
       example: {
@@ -69,7 +69,10 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['output']
+    clean: {
+      fonts: 'fonts',
+      output: 'output'
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -77,9 +80,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-rename');
 
   grunt.registerTask('default', [
+    'clean:fonts',
     'webfont:files',
     'webfont:embedded',
     'rename',
-    'clean'
+    'clean:output'
   ]);
 };
