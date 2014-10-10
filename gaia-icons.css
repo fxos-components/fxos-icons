@@ -2,19 +2,9 @@
 /* Based on https://github.com/endtwist/fontcustom/blob/master/lib/fontcustom/templates/fontcustom.css */
 
 
-
-@font-face {
-    font-family: "gaia-icons";
-    src: url("fonts/gaia-icons.eot");
-    font-weight: 500;
-    font-style: normal;
-}
 @font-face {
 	font-family: "gaia-icons";
-	src: url("fonts/gaia-icons.eot");
-	src: url("fonts/gaia-icons.eot?#iefix") format("embedded-opentype"),
-		url("fonts/gaia-icons.woff") format("woff"),
-		url("fonts/gaia-icons.ttf") format("truetype");
+	src: url("fonts/gaia-icons.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }

@@ -13,8 +13,8 @@ module.exports = function(grunt) {
         dest: 'output/embedded/',
         options: {
           font: 'gaia-icons',
-          types: 'woff',
-          embed: 'woff',
+          types: 'ttf',
+          embed: 'ttf',
           ligatures: true,
           hashes: false,
           template: 'templates/gaia-icons.css',
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         destHtml: 'output/files/',
         options: {
           font: 'gaia-icons',
-          types: 'ttf,woff,eot',
+          types: 'ttf',
           template: 'templates/gaia-icons.css',
           htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
