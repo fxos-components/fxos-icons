@@ -1,6 +1,7 @@
 {
   "name": "gaia-icons",
   "version": "0.2.3",
+  "main": "gaia-icons.js",
   "scripts": {
     "gh-pages": "git push upstream master:gh-pages"
   },
