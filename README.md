@@ -28,6 +28,16 @@ If you wish to make changes to the icon-font you'll need to follow these steps:
 6. Submit a pull-request
 7. Module owner will review, land, and stamp a new version.
 
+## Guidelines
+
+For best results, it is recommended to follow these guidelines:
+
+* Make the document 30px × 30px (In Inkscape: File > Document Properties... > Custom size)
+* Make the icon 24px × 24px
+* Center the icon (In Inkscape: Object > Align and Distribute... > Align relative to page)
+* Make sure to have only one <path> per icon
+* Optimise the icons using [svgo](https://github.com/svg/svgo), then export to plain SVG file (`$ inkscape -l icon.svg icon.svg`)
+
 ## Gaia usage
 
 Gaia hackers, please read the introduction to ['Version controlled packages in Gaia'](https://gist.github.com/wilsonpage/3d7f636a78db66f8f1d7) to find out how to use this package in your Gaia app.
