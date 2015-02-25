@@ -35,7 +35,7 @@ For best results, it is recommended to follow these guidelines:
 * Make the document 30px × 30px (In Inkscape: File > Document Properties... > Custom size)
 * Make the icon 24px × 24px
 * Center the icon (In Inkscape: Object > Align and Distribute... > Align relative to page)
-* Make sure to have only one <path> per icon
+* Make sure to have only one `<path>` with no overlap per icon
 * Optimise the icons using [svgo](https://github.com/svg/svgo), then export to plain SVG file (`$ inkscape -l icon.svg icon.svg`)
 
 ## Gaia usage
