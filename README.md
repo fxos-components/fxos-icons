@@ -42,6 +42,15 @@ For best results, it is recommended to follow these guidelines:
 
 Gaia hackers, please read the introduction to ['Version controlled packages in Gaia'](https://gist.github.com/wilsonpage/3d7f636a78db66f8f1d7) to find out how to use this package in your Gaia app.
 
+## Get a report
+
+You can get a report of unused icons on a project by doing:
+```bash
+$ node bin/report.js path/to/your/project/
+```
+
+Please note, that dynamically inserted icons may still be marked as unused in the report.
+
 ## Current owners
 
 - Wilson Page [:wilsonpage]
