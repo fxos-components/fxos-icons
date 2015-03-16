@@ -17,6 +17,7 @@
     "test",
     "tests",
     "index.html",
+    "index-gaia-tv-icons.html",
     "create-svg-icon-set-file.py",
     "Gruntfile.js",
     "README.md",

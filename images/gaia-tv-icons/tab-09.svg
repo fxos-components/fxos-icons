@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54px"
+	 height="54px" viewBox="0 0 54 54" enable-background="new 0 0 54 54" xml:space="preserve">
+<g id="Layer_40" display="none">
+	<rect x="-126.333" y="-665.5" display="inline" fill="#464445" width="691.333" height="784"/>
+</g>
+<g id="Layer_6">
+</g>
+<g id="Dark">
+	<g>
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#1D1D1B" d="M16.515,20.219c0-1.864,1.533-3.718,3.398-3.718h13.679
+				c-0.176-1.671-1.596-2.786-3.341-2.786H16.746c-1.864,0-3.061,1.264-3.061,3.128v13.504c0,1.739,1.162,3.154,2.83,3.339V20.219z"
+				/>
+		</g>
+	</g>
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#231815" d="M29.411,24.863c-1.17,0-1.908,0.811-1.908,2.358
+			c0,1.656,0.756,2.305,1.729,2.305c0.828,0,1.53-0.45,2.07-1.242C31.337,25.781,30.761,24.863,29.411,24.863z"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#231815" d="M36.813,18.595H22.328c-1.968,0-3.716,2.094-3.716,4.062v14.297
+			c0,1.968,1.748,3.332,3.716,3.332h14.485c1.969,0,3.502-1.364,3.502-3.332V22.656C40.315,20.688,38.782,18.595,36.813,18.595z
+			 M26.602,35.937l-0.486-1.639c3.025-0.792,4.753-1.963,5.078-4.357c-0.576,0.738-1.422,1.261-2.593,1.261
+			c-1.873,0-3.403-1.494-3.403-3.943c0-2.539,1.873-4.105,4.213-4.105c2.809,0,4.25,1.909,4.25,4.699
+			C33.66,32.84,31.463,34.784,26.602,35.937z"/>
+	</g>
+</g>
+<g id="Layer_5" display="none">
+	<path display="inline" opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" fill="#E30613" d="M0,8.5v54h54v-54H0z M47,55.5H7
+		v-40h40V55.5z"/>
+</g>
+<g id="name" display="none">
+	<text transform="matrix(1 0 0 1 6.4567 50.4886)" display="inline" fill="#646363" font-family="'UniversLTStd-Cn'" font-size="8">tab-09</text>
+</g>
+<g id="Title" display="none">
+</g>
+</svg>
