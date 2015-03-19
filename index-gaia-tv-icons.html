@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gaia-tv-icons</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      body {
+        font-family: 'Helvetica', sans-serif;
+        background: #eee;
+        color: #444;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      section a {
+        box-sizing: content-box;
+        display: block;
+        float: left;
+        color: #222;
+        width: 3rem;
+        height: 3rem;
+        text-decoration: none;
+        border: solid 1px #eee;
+        text-align: center;
+        margin: -1px;
+        background: #fff;
+        line-height: 1;
+      }
+
+      section a:hover {
+        background: #f4f4f4;
+      }
+
+      section a:target {
+        background: #00caf2;
+        transform: scale(2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+      }
+
+      #show-view-boxes:checked ~ section a:before {
+        background: rgba(0, 0, 0, 0.12);
+      }
+
+      h1 {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 140px;
+        color: #E5E5E5;
+        -moz-user-select: none;
+        letter-spacing: -2px;
+        text-shadow:
+          -1px -1px 0 rgba(0, 0, 0, 0.1),
+          1px 1px 0 rgba(255, 255, 255, 0.5)
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        border-top: solid 1px #ddd;
+        text-align: right;
+        font-size: 13px;
+      }
+
+      footer label {
+        display: block;
+        float: right;
+        padding: 0.7rem 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        cursor: pointer;
+        color: #fff;
+        -moz-user-select: none;
+             user-select: none;
+      }
+
+      footer label:hover {
+        background: rgba(0, 0, 0, 0.15);
+      }
+
+      #show-view-boxes:checked ~ footer label[for="show-view-boxes"] {
+        background: #00caf2;
+        color: #fff;
+      }
+
+      #show-view-boxes {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="gaia-tv-icons.css">
+  </head>
+  <body>
+    <input id="show-view-boxes" type="checkbox">
+    <a href="#"><h1>Gaia TV Icons</h1></a>
+    <section>
+
+      <a href="#add-device" id="add-device" data-icon="add-device"></a>
+
+      <a href="#add-pc" id="add-pc" data-icon="add-pc"></a>
+
+      <a href="#add-tab" id="add-tab" data-icon="add-tab"></a>
+
+      <a href="#add" id="add" data-icon="add"></a>
+
+      <a href="#application" id="application" data-icon="application"></a>
+
+      <a href="#arrow-down" id="arrow-down" data-icon="arrow-down"></a>
+
+      <a href="#arrow-left" id="arrow-left" data-icon="arrow-left"></a>
+
+      <a href="#arrow-right" id="arrow-right" data-icon="arrow-right"></a>
+
+      <a href="#arrow-up" id="arrow-up" data-icon="arrow-up"></a>
+
+      <a href="#audio-output" id="audio-output" data-icon="audio-output"></a>
+
+      <a href="#audio-settings" id="audio-settings" data-icon="audio-settings"></a>
+
+      <a href="#back" id="back" data-icon="back"></a>
+
+      <a href="#bluetooth" id="bluetooth" data-icon="bluetooth"></a>
+
+      <a href="#bookmark-list" id="bookmark-list" data-icon="bookmark-list"></a>
+
+      <a href="#bookmark-off" id="bookmark-off" data-icon="bookmark-off"></a>
+
+      <a href="#bookmark-on" id="bookmark-on" data-icon="bookmark-on"></a>
+
+      <a href="#byname" id="byname" data-icon="byname"></a>
+
+      <a href="#bytime" id="bytime" data-icon="bytime"></a>
+
+      <a href="#category" id="category" data-icon="category"></a>
+
+      <a href="#check" id="check" data-icon="check"></a>
+
+      <a href="#close" id="close" data-icon="close"></a>
+
+      <a href="#dashboard" id="dashboard" data-icon="dashboard"></a>
+
+      <a href="#default-fav" id="default-fav" data-icon="default-fav"></a>
+
+      <a href="#default-notification" id="default-notification" data-icon="default-notification"></a>
+
+      <a href="#delete" id="delete" data-icon="delete"></a>
+
+      <a href="#device" id="device" data-icon="device"></a>
+
+      <a href="#eye" id="eye" data-icon="eye"></a>
+
+      <a href="#filter" id="filter" data-icon="filter"></a>
+
+      <a href="#folder" id="folder" data-icon="folder"></a>
+
+      <a href="#forward" id="forward" data-icon="forward"></a>
+
+      <a href="#game" id="game" data-icon="game"></a>
+
+      <a href="#hdmi" id="hdmi" data-icon="hdmi"></a>
+
+      <a href="#help" id="help" data-icon="help"></a>
+
+      <a href="#home" id="home" data-icon="home"></a>
+
+      <a href="#keyboard" id="keyboard" data-icon="keyboard"></a>
+
+      <a href="#launch" id="launch" data-icon="launch"></a>
+
+      <a href="#link" id="link" data-icon="link"></a>
+
+      <a href="#menu" id="menu" data-icon="menu"></a>
+
+      <a href="#mic" id="mic" data-icon="mic"></a>
+
+      <a href="#minus" id="minus" data-icon="minus"></a>
+
+      <a href="#more" id="more" data-icon="more"></a>
+
+      <a href="#mouse" id="mouse" data-icon="mouse"></a>
+
+      <a href="#nas" id="nas" data-icon="nas"></a>
+
+      <a href="#phone" id="phone" data-icon="phone"></a>
+
+      <a href="#picture" id="picture" data-icon="picture"></a>
+
+      <a href="#pin" id="pin" data-icon="pin"></a>
+
+      <a href="#record" id="record" data-icon="record"></a>
+
+      <a href="#refresh" id="refresh" data-icon="refresh"></a>
+
+      <a href="#reload" id="reload" data-icon="reload"></a>
+
+      <a href="#rename" id="rename" data-icon="rename"></a>
+
+      <a href="#search" id="search" data-icon="search"></a>
+
+      <a href="#setting" id="setting" data-icon="setting"></a>
+
+      <a href="#sidebar-close" id="sidebar-close" data-icon="sidebar-close"></a>
+
+      <a href="#sidebar-open" id="sidebar-open" data-icon="sidebar-open"></a>
+
+      <a href="#speaker" id="speaker" data-icon="speaker"></a>
+
+      <a href="#tab-00" id="tab-00" data-icon="tab-00"></a>
+
+      <a href="#tab-01" id="tab-01" data-icon="tab-01"></a>
+
+      <a href="#tab-02" id="tab-02" data-icon="tab-02"></a>
+
+      <a href="#tab-03" id="tab-03" data-icon="tab-03"></a>
+
+      <a href="#tab-04" id="tab-04" data-icon="tab-04"></a>
+
+      <a href="#tab-05" id="tab-05" data-icon="tab-05"></a>
+
+      <a href="#tab-06" id="tab-06" data-icon="tab-06"></a>
+
+      <a href="#tab-07" id="tab-07" data-icon="tab-07"></a>
+
+      <a href="#tab-08" id="tab-08" data-icon="tab-08"></a>
+
+      <a href="#tab-09" id="tab-09" data-icon="tab-09"></a>
+
+      <a href="#tab-10" id="tab-10" data-icon="tab-10"></a>
+
+      <a href="#tab-11" id="tab-11" data-icon="tab-11"></a>
+
+      <a href="#tab-12" id="tab-12" data-icon="tab-12"></a>
+
+      <a href="#timer" id="timer" data-icon="timer"></a>
+
+      <a href="#tv" id="tv" data-icon="tv"></a>
+
+      <a href="#usb" id="usb" data-icon="usb"></a>
+
+      <a href="#vga" id="vga" data-icon="vga"></a>
+
+      <a href="#video-settings" id="video-settings" data-icon="video-settings"></a>
+
+      <a href="#wifi" id="wifi" data-icon="wifi"></a>
+
+      <a href="#zoomin" id="zoomin" data-icon="zoomin"></a>
+
+    </section>
+    <footer>
+      <label for="show-view-boxes">Show View Boxes</label>
+    </footer>
+  </body>
+</html>
