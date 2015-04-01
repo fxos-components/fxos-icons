@@ -5,7 +5,12 @@
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
-  "main": ["gaia-icons.js", "gaia-icons.css", "fonts/gaia-icons.ttf", "gaia-icons-embedded.css"],
+  "main": [
+    "gaia-icons.js",
+    "gaia-icons.css",
+    "fonts/gaia-icons.ttf",
+    "gaia-icons-embedded.css"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
