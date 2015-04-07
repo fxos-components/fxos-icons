@@ -18,25 +18,31 @@ $ bower install gaia-components/gaia-icons
 
 ## Contributions
 
-If you wish to make changes to the icon-font you'll need to follow these steps:
+If you wish to make changes to the icon font you'll need to follow these steps:
 
-1. Add, remove or change repsective `.svg` files inside `images/`
+1. Add, remove or change respective `.svg` files inside `images/`.
 2. Run `$ npm install` to get pull in all the required build tools.
-3. Make sure you `fontforge` and `ttfautohint` installed on your machine. The [grunt-webfont](https://github.com/sapegin/grunt-webfont#installation) readme outlines the prerequisites.
-4. Run `$ grunt`
+3. Make sure you have `fontforge` and `ttfautohint` installed on your machine. The [grunt-webfont](https://github.com/sapegin/grunt-webfont#installation) installation guide outlines the prerequisites.
+4. Run `$ grunt`.
 5. Load `index.html` locally in your browser and check your icon looks good.
-6. Submit a pull-request
+6. Submit a pull request.
 7. Module owner will review, land, and stamp a new version.
 
 ## Guidelines
 
 For best results, it is recommended to follow these guidelines:
 
-* Make the document 30px × 30px (In Inkscape: File > Document Properties... > Custom size)
-* Make the icon 24px × 24px
-* Center the icon (In Inkscape: Object > Align and Distribute... > Align relative to page)
-* Make sure to have only one `<path>` with no overlap per icon
-* Optimise the icons using [svgo](https://github.com/svg/svgo), then export to plain SVG file (`$ inkscape -l icon.svg icon.svg`)
+* Make the document 30px × 30px (In Inkscape: File > Document Properties... > Custom size).
+* Make the icon 24px × 24px.
+* Center the icon (In Inkscape: Object > Align and Distribute... > Align relative to page).
+* Make sure to have only one `<path>` with no overlap per icon.
+* Optimise the icons using [svgo](https://github.com/svg/svgo), then export to plain SVG file (`$ inkscape -l icon.svg icon.svg`).
+
+Please also make sure new icons naming is consistent with existing ones:
+
+* Use lower case only.
+* Separate words with hyphens.
+* Use meaningful words rather than acronyms (e.g. `top-left-crop-corner` instead of <span style="text-decoration:line-through">`t-l-crop-corner`</span>).
 
 ## Gaia usage
 
