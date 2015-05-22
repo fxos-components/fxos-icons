@@ -6,15 +6,41 @@
 $ bower install gaia-components/gaia-icons
 ```
 
-## Usage
+Then include folowing file in HTML
 
 ```html
-<span data-icon="camera"></span>
+<script src="bower_components/gaia-icons/gaia-icons.js"></script>
+```
+
+## Usage
+
+Use `i` tag to present an icon.
+
+```html
+<i data-icon="camera" data-l10n-id="camera"></i>
 ```
 
 ## Examples
 
 - [Example](http://gaia-components.github.io/gaia-icons/)
+
+## Accessibility
+
+`aria-label` will be added automatically when `data-l10n-id` attribute is specified in target element.
+
+```html
+<i data-icon="camera" data-l10n-id="camera"></i>
+```
+
+If the icon is for present only, add `aria-hidden` attribute to make it unreachable by the screen reader.
+
+```html
+<i data-icon="camera" aria-hidden="true"></i>
+```
+
+If the icon is included in certain component, try integrate it as component's `data-icon` attribute and handle the accessiblity related issues automatically.
+
+If `aria-hidden` is not used on the icon, it will always be accessible to the screen reader. Adding `data-l10n-id` to the element with `data-icon` that points to `{property}.ariaLabel` in the properties file (that will add an `aria-label` attribute to the same element and will not touch inner HTML).
 
 ## Contributions
 
@@ -56,6 +82,12 @@ $ node bin/report.js path/to/your/project/
 ```
 
 Please note, that dynamically inserted icons may still be marked as unused in the report.
+
+## Lint check
+
+Run lint check with command:
+
+`$ npm run lint`
 
 ## Current owners
 
