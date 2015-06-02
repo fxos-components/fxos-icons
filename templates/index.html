@@ -113,7 +113,7 @@
     <a href="#"><h1>Gaia Icons</h1></a>
     <section>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
-      <a href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>"></a>
+      <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>"></a>
 <% } %>
     </section>
     <footer>
