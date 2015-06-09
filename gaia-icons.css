@@ -11,9 +11,9 @@
 
 
 [data-icon]:before,
+[data-icon-end]:after,
 .ligature-icons {
 	font-family: "gaia-icons";
-	content: attr(data-icon);
 	display: inline-block;
 	font-weight: 500;
 	font-style: normal;
@@ -22,6 +22,16 @@
 	text-rendering: optimizeLegibility;
 	font-size: 30px;
 	-webkit-font-smoothing: antialiased;
+}
+
+[data-icon]:before,
+.ligature-icons {
+    content: attr(data-icon);
+}
+
+[data-icon-end]:after {
+    /* attach icon after the element */
+    content: attr(data-icon-end);
 }
 
 [data-icon]:not([data-l10n-id]):not([aria-hidden="true"]):before {
