@@ -9,7 +9,8 @@
     "gaia-icons.js",
     "gaia-icons.css",
     "fonts/gaia-icons.ttf",
-    "gaia-icons-embedded.css"
+    "gaia-icons-embedded.css",
+    "bidi-helper.css"
   ],
   "license": "MIT",
   "ignore": [
