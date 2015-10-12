@@ -56,3 +56,10 @@
   content: 'expand-right';
 }
 
+[data-icon="send"]:-moz-dir(ltr):before {
+  content: 'send-right';
+}
+[data-icon="send"]:-moz-dir(rtl):before {
+  content: 'send-left';
+}
+
