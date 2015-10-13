@@ -1,4 +1,7 @@
-/* Some BiDi-proof icons */
+/* Some BiDi-proof icons 
+ * In the future, we might handle this at the font level, see 
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=1214127 
+ */
 
 [data-icon="back"]:-moz-dir(ltr):before {
   content: 'left';
@@ -62,4 +65,3 @@
 [data-icon="send"]:-moz-dir(rtl):before {
   content: 'send-left';
 }
-
