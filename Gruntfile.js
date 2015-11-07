@@ -35,6 +35,7 @@ module.exports = function(grunt) {
           htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
           hashes: false,
+          autoHint: false,
           templateOptions: {
             baseClass: '',
             classPrefix: '',
