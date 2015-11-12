@@ -8,4 +8,3 @@ RUN npm install
 RUN apt-get update && apt-get -y install fontforge;
 
 WORKDIR /gaia-icons
-ENTRYPOINT ["bin/build.sh"]
