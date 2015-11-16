@@ -24,6 +24,8 @@
     "index.html",
     "create-svg-icon-set-file.py",
     "Gruntfile.js",
+    "Dockerfile",
+    "bin",
     "README.md",
     "package.json"
   ]
