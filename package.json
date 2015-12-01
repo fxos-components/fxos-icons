@@ -1,7 +1,7 @@
 {
   "name": "gaia-icons",
   "version": "1.0.2",
-  "homepage": "https://github.com/gaia-components/gaia-icons",
+  "homepage": "https://github.com/fxos-components/gaia-icons",
   "license": "MIT",
   "main": "gaia-icons.js",
   "devDependencies": {
@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gaia-components/gaia-icons.git"
+    "url": "git://github.com/fxos-components/gaia-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/gaia-components/gaia-icons/issues"
+    "url": "https://github.com/fxos-components/gaia-icons/issues"
   }
 }

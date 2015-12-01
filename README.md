@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ bower install gaia-components/gaia-icons
+$ bower install fxos-components/gaia-icons
 ```
 
 Then include folowing file in HTML
@@ -22,7 +22,7 @@ Use `i` tag to present an icon.
 
 ## Examples
 
-- [Example](http://gaia-components.github.io/gaia-icons/)
+- [Example](http://fxos-components.github.io/gaia-icons/)
 
 ## Accessibility
 
