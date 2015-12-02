@@ -1,10 +1,10 @@
 FROM node:5.0.0
 
-ADD . /gaia-icons
+ADD . /fxos-icons
 
-WORKDIR /gaia-icons
+WORKDIR /fxos-icons
 
 RUN npm install
 RUN apt-get update && apt-get -y install fontforge;
 
-WORKDIR /gaia-icons
+WORKDIR /fxos-icons

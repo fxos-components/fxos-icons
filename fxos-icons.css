@@ -2,15 +2,15 @@
 /* Based on https://github.com/endtwist/fontcustom/blob/master/lib/fontcustom/templates/fontcustom.css */
 
 @font-face {
-	font-family: "gaia-icons";
-	src: url("fonts/gaia-icons.ttf") format("truetype");
+	font-family: "fxos-icons";
+	src: url("fonts/fxos-icons.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 [data-icon]:before,
 .ligature-icons {
-	font-family: "gaia-icons";
+	font-family: "fxos-icons";
 	content: attr(data-icon);
 	display: inline-block;
 	font-weight: 500;
