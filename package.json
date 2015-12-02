@@ -1,9 +1,9 @@
 {
-  "name": "gaia-icons",
+  "name": "fxos-icons",
   "version": "1.0.3",
-  "homepage": "https://github.com/fxos-components/gaia-icons",
+  "homepage": "https://github.com/fxos-components/fxos-icons",
   "license": "MIT",
-  "main": "gaia-icons.js",
+  "main": "fxos-icons.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
@@ -15,18 +15,18 @@
     "optimist": "^0.6.1"
   },
   "scripts": {
-    "lint": "jshint gaia-icons.js",
+    "lint": "jshint fxos-icons.js",
     "gh-pages": "git push upstream master:gh-pages",
-    "docker-build": "docker build --tag gaia-icons .",
-    "docker-run": "docker run -v $(echo $PWD):/gaia-icons-host gaia-icons",
+    "docker-build": "docker build --tag fxos-icons .",
+    "docker-run": "docker run -v $(echo $PWD):/fxos-icons-host fxos-icons",
     "docker": "npm run --silent docker-run",
     "build": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fxos-components/gaia-icons.git"
+    "url": "git://github.com/fxos-components/fxos-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/fxos-components/gaia-icons/issues"
+    "url": "https://github.com/fxos-components/fxos-icons/issues"
   }
 }

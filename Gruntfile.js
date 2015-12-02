@@ -12,12 +12,12 @@ module.exports = function(grunt) {
         src: 'images/*.svg',
         dest: 'output/embedded/',
         options: {
-          font: 'gaia-icons',
+          font: 'fxos-icons',
           types: 'ttf',
           embed: 'ttf',
           ligatures: true,
           hashes: false,
-          template: 'templates/gaia-icons.css',
+          template: 'templates/fxos-icons.css',
           htmlDemoTemplate: 'templates/index.html'
         }
       },
@@ -29,9 +29,9 @@ module.exports = function(grunt) {
         destCss: 'output/files/',
         destHtml: 'output/files/',
         options: {
-          font: 'gaia-icons',
+          font: 'fxos-icons',
           types: 'ttf',
-          template: 'templates/gaia-icons.css',
+          template: 'templates/fxos-icons.css',
           htmlDemoTemplate: 'templates/index.html',
           ligatures: true,
           hashes: false,
@@ -50,13 +50,13 @@ module.exports = function(grunt) {
     // doesn't let us specify filenames).
     rename: {
       'css-embedded': {
-        src: 'output/embedded/gaia-icons.css',
-        dest: 'gaia-icons-embedded.css',
+        src: 'output/embedded/fxos-icons.css',
+        dest: 'fxos-icons-embedded.css',
       },
 
       css: {
-        src: 'output/files/gaia-icons.css',
-        dest: 'gaia-icons.css',
+        src: 'output/files/fxos-icons.css',
+        dest: 'fxos-icons.css',
       },
 
       fonts: {
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
       },
 
       example: {
-        src: 'output/files/gaia-icons.html',
+        src: 'output/files/fxos-icons.html',
         dest: 'index.html'
       }
     },

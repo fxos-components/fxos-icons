@@ -20,7 +20,7 @@ import argparse, os, sys, re, math
 epilog = """
 This script comes from:
 
-  https://github.com/gaia-components/gaia-icons/tree/master/
+  https://github.com/fxos-components/fxos-icons/tree/master/
 
 It is used to dump out a single "SVG icon set" file as source code containing
 the source of all the SVG icon files in the 'images' directory. It cleans up
@@ -35,10 +35,10 @@ performance on lower end devices.
 
 Example icon set file usage:
 
-If you called the output file 'gaia-icons.svg', then to reference the
+If you called the output file 'fxos-icons.svg', then to reference the
 'back-arrow' icon from an <img> element you would use something like:
 
-  <img src="gaia-icons.svg#back-arrow">
+  <img src="fxos-icons.svg#back-arrow">
 
 Any questions, ask Jonathan Watt <jwatt@jwatt.org>
 """
@@ -158,7 +158,7 @@ if warn:
   sys.stderr.write("\n<!-- !!! WARNING: NOT ALL ICON FILES HAVE THE SAME DIMENSIONS !!! -->\n\n")
 
 
-output = "<!-- from https://github.com/gaia-components/gaia-icons/tree/master/images -->\n"
+output = "<!-- from https://github.com/fxos-components/fxos-icons/tree/master/images -->\n"
 
 if not USE_GRID_LAYOUT:
   output += "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"" + str(icon_width) + "\" height=\"" + str(icon_height) + "\" fill=\"blue\">\n"
@@ -176,10 +176,10 @@ else:
   cols = int(math.ceil(math.sqrt(len(icons))))
   rows = int(math.ceil(len(icons)/float(cols)))
   padding = 5 # the amount of room we give around each icon (in CSS px)
-  
+
   total_width = str(icon_width * cols + padding * (cols+1))
   total_height = str(icon_height * rows + padding * (rows+1))
-  
+
   # We do not set a width or height here, otherwise the fragment identifier linking can't work
   output += "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"blue\">\n" # width=\"" + total_width + "\" height=\"" + total_height + "\"
   for i in range(len(icons)):

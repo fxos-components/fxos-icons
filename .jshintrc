@@ -29,5 +29,7 @@
   "nonstandard": true,
   "worker": true,
 
-  "-W078": true
+  "-W078": true,
+
+  "predef": ["define"]
 }
