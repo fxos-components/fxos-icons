@@ -12,14 +12,19 @@
 .ligature-icons {
 	font-family: "fxos-icons";
 	content: attr(data-icon);
-	display: inline-block;
+	display: block;
+	width: 1em; /* stop overflow in chrome */
+	font-size: 30px;
 	font-weight: 500;
 	font-style: normal;
+	white-space: nowrap; /* stop wrapping in chrome */
+  text-align: center;
+  overflow: hidden;
 	text-decoration: inherit;
 	text-transform: none;
 	text-rendering: optimizeLegibility;
-	font-size: 30px;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 [data-icon]:not([data-l10n-id]):not([aria-label]):not([aria-hidden="true"]):before {
