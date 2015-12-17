@@ -1,5 +1,5 @@
 fxos-icons:
   build: .
   volumes:
-    - ${PWD}:/fxos-icons
-  command: bash -c "npm update && npm run build"
+    - .:/fxos-icons
+  command: bin/build.sh
