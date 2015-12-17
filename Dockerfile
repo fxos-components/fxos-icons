@@ -1,10 +1,4 @@
 FROM node:5.0.0
-
-ADD . /fxos-icons
-
+RUN apt-get update && apt-get -y upgrade
 WORKDIR /fxos-icons
-
-RUN npm install
-RUN apt-get update && apt-get -y install fontforge;
-
-WORKDIR /fxos-icons
+RUN apt-get -y install fontforge;
