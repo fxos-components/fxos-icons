@@ -7,5 +7,6 @@ test
 images
 templates
 Dockerfile
+docker-compose.yml
 Gruntfile.js
 bin

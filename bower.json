@@ -8,6 +8,7 @@
     "fxos-icons.js",
     "fxos-icons.css",
     "fonts/fxos-icons.ttf",
+    "docker-compose.yml",
     "fxos-icons-embedded.css",
     "bidi-helper.css"
   ],
