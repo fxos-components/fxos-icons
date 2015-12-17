@@ -20,7 +20,7 @@
 .ligature-icons<% } %> {
 	font-family: "<%= fontBaseName %>";
 	content: attr(data-icon);
-	display: block;
+	display: inline-block;
 	width: 1em; /* stop overflow in chrome */
 	font-size: 30px;
 	font-weight: 500;
