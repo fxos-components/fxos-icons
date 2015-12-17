@@ -1,0 +1,11 @@
+**/.*
+
+bower_components
+bower.json
+index.html
+test
+images
+templates
+Dockerfile
+Gruntfile.js
+bin

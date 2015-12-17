@@ -1,15 +1,15 @@
 {
-  "name": "gaia-icons",
-  "version": "0.9.2",
-  "homepage": "https://github.com/wilsonpage/gaia-icons",
+  "name": "fxos-icons",
+  "homepage": "https://github.com/fxos-components/fxos-icons",
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
   "main": [
-    "gaia-icons.js",
-    "gaia-icons.css",
-    "fonts/gaia-icons.ttf",
-    "gaia-icons-embedded.css"
+    "fxos-icons.js",
+    "fxos-icons.css",
+    "fonts/fxos-icons.ttf",
+    "fxos-icons-embedded.css",
+    "bidi-helper.css"
   ],
   "license": "MIT",
   "ignore": [
@@ -24,6 +24,8 @@
     "index.html",
     "create-svg-icon-set-file.py",
     "Gruntfile.js",
+    "Dockerfile",
+    "bin",
     "README.md",
     "package.json"
   ]

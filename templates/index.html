@@ -22,12 +22,12 @@
 
       section {
         padding: 20px;
+        text-align: left;
       }
 
       section a {
         box-sizing: content-box;
-        display: block;
-        float: left;
+        display: inline-block;
         color: #222;
         width: 3rem;
         height: 3rem;
@@ -106,7 +106,8 @@
         display: none;
       }
     </style>
-    <link rel="stylesheet" href="gaia-icons.css">
+    <link rel="stylesheet" href="fxos-icons.css">
+    <link rel="stylesheet" href="bidi-helper.css">
   </head>
   <body>
     <input id="show-view-boxes" type="checkbox">
@@ -114,6 +115,25 @@
     <section>
 <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
       <a aria-hidden="true" href="#<%= glyph %>" id="<%= glyph %>" data-icon="<%= glyph %>"></a>
+<% } %>
+    </section>
+    <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
+    <h3>LTR mode</h3>
+    <section dir="ltr">
+<%
+var bidiIcons = [
+  'back','forward','back-light','forward-light', 'arrow-back','arrow-forward',
+  'clear-input','expand', 'send', 'edit'
+];
+for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIcons[iconIdx] %>
+      <a aria-hidden="true" href="#<%= icon %>-ltr" id="<%= icon %>-ltr" data-icon="<%= icon %>"></a>
+<% } %>
+    </section>
+    <h3>RTL mode</h3>
+    <section dir="rtl">
+<%
+for (var iconIdx = 0; iconIdx < bidiIcons.length; iconIdx++) { var icon = bidiIcons[iconIdx] %>
+      <a aria-hidden="true" href="#<%= icon %>-rtl" id="<%= icon %>-rtl" data-icon="<%= icon %>"></a>
 <% } %>
     </section>
     <footer>

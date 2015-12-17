@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>gaia-icons</title>
+    <title>fxos-icons</title>
     <style>
       * {
         margin: 0;
@@ -22,12 +22,12 @@
 
       section {
         padding: 20px;
+        text-align: left;
       }
 
       section a {
         box-sizing: content-box;
-        display: block;
-        float: left;
+        display: inline-block;
         color: #222;
         width: 3rem;
         height: 3rem;
@@ -106,7 +106,8 @@
         display: none;
       }
     </style>
-    <link rel="stylesheet" href="gaia-icons.css">
+    <link rel="stylesheet" href="fxos-icons.css">
+    <link rel="stylesheet" href="bidi-helper.css">
   </head>
   <body>
     <input id="show-view-boxes" type="checkbox">
@@ -141,17 +142,13 @@
 
       <a aria-hidden="true" href="#all-day" id="all-day" data-icon="all-day"></a>
 
-      <a aria-hidden="true" href="#arrow-back" id="arrow-back" data-icon="arrow-back"></a>
+      <a aria-hidden="true" href="#arrow-left" id="arrow-left" data-icon="arrow-left"></a>
 
-      <a aria-hidden="true" href="#arrow-forward" id="arrow-forward" data-icon="arrow-forward"></a>
+      <a aria-hidden="true" href="#arrow-right" id="arrow-right" data-icon="arrow-right"></a>
 
       <a aria-hidden="true" href="#artist" id="artist" data-icon="artist"></a>
 
       <a aria-hidden="true" href="#attachment" id="attachment" data-icon="attachment"></a>
-
-      <a aria-hidden="true" href="#back-light" id="back-light" data-icon="back-light"></a>
-
-      <a aria-hidden="true" href="#back" id="back" data-icon="back"></a>
 
       <a aria-hidden="true" href="#battery-0" id="battery-0" data-icon="battery-0"></a>
 
@@ -227,7 +224,9 @@
 
       <a aria-hidden="true" href="#change-wallpaper" id="change-wallpaper" data-icon="change-wallpaper"></a>
 
-      <a aria-hidden="true" href="#clear-input" id="clear-input" data-icon="clear-input"></a>
+      <a aria-hidden="true" href="#clear-input-left" id="clear-input-left" data-icon="clear-input-left"></a>
+
+      <a aria-hidden="true" href="#clear-input-right" id="clear-input-right" data-icon="clear-input-right"></a>
 
       <a aria-hidden="true" href="#close" id="close" data-icon="close"></a>
 
@@ -265,7 +264,9 @@
 
       <a aria-hidden="true" href="#edit-image" id="edit-image" data-icon="edit-image"></a>
 
-      <a aria-hidden="true" href="#edit" id="edit" data-icon="edit"></a>
+      <a aria-hidden="true" href="#edit-left" id="edit-left" data-icon="edit-left"></a>
+
+      <a aria-hidden="true" href="#edit-right" id="edit-right" data-icon="edit-right"></a>
 
       <a aria-hidden="true" href="#effects" id="effects" data-icon="effects"></a>
 
@@ -283,7 +284,9 @@
 
       <a aria-hidden="true" href="#exclamation" id="exclamation" data-icon="exclamation"></a>
 
-      <a aria-hidden="true" href="#expand" id="expand" data-icon="expand"></a>
+      <a aria-hidden="true" href="#expand-left" id="expand-left" data-icon="expand-left"></a>
+
+      <a aria-hidden="true" href="#expand-right" id="expand-right" data-icon="expand-right"></a>
 
       <a aria-hidden="true" href="#facebook" id="facebook" data-icon="facebook"></a>
 
@@ -304,10 +307,6 @@
       <a aria-hidden="true" href="#focus-locked" id="focus-locked" data-icon="focus-locked"></a>
 
       <a aria-hidden="true" href="#focus-locking" id="focus-locking" data-icon="focus-locking"></a>
-
-      <a aria-hidden="true" href="#forward-light" id="forward-light" data-icon="forward-light"></a>
-
-      <a aria-hidden="true" href="#forward" id="forward" data-icon="forward"></a>
 
       <a aria-hidden="true" href="#gesture" id="gesture" data-icon="gesture"></a>
 
@@ -344,6 +343,10 @@
       <a aria-hidden="true" href="#keyboard" id="keyboard" data-icon="keyboard"></a>
 
       <a aria-hidden="true" href="#languages" id="languages" data-icon="languages"></a>
+
+      <a aria-hidden="true" href="#left-light" id="left-light" data-icon="left-light"></a>
+
+      <a aria-hidden="true" href="#left" id="left" data-icon="left"></a>
 
       <a aria-hidden="true" href="#link" id="link" data-icon="link"></a>
 
@@ -383,6 +386,8 @@
 
       <a aria-hidden="true" href="#picture-size" id="picture-size" data-icon="picture-size"></a>
 
+      <a aria-hidden="true" href="#pin" id="pin" data-icon="pin"></a>
+
       <a aria-hidden="true" href="#play-circle" id="play-circle" data-icon="play-circle"></a>
 
       <a aria-hidden="true" href="#play" id="play" data-icon="play"></a>
@@ -400,6 +405,10 @@
       <a aria-hidden="true" href="#repeat" id="repeat" data-icon="repeat"></a>
 
       <a aria-hidden="true" href="#reply-all" id="reply-all" data-icon="reply-all"></a>
+
+      <a aria-hidden="true" href="#right-light" id="right-light" data-icon="right-light"></a>
+
+      <a aria-hidden="true" href="#right" id="right" data-icon="right"></a>
 
       <a aria-hidden="true" href="#rocket" id="rocket" data-icon="rocket"></a>
 
@@ -419,7 +428,9 @@
 
       <a aria-hidden="true" href="#self-timer" id="self-timer" data-icon="self-timer"></a>
 
-      <a aria-hidden="true" href="#send" id="send" data-icon="send"></a>
+      <a aria-hidden="true" href="#send-left" id="send-left" data-icon="send-left"></a>
+
+      <a aria-hidden="true" href="#send-right" id="send-right" data-icon="send-right"></a>
 
       <a aria-hidden="true" href="#settings" id="settings" data-icon="settings"></a>
 
@@ -495,6 +506,8 @@
 
       <a aria-hidden="true" href="#unlock" id="unlock" data-icon="unlock"></a>
 
+      <a aria-hidden="true" href="#unpin" id="unpin" data-icon="unpin"></a>
+
       <a aria-hidden="true" href="#update-balance" id="update-balance" data-icon="update-balance"></a>
 
       <a aria-hidden="true" href="#usb" id="usb" data-icon="usb"></a>
@@ -522,6 +535,55 @@
       <a aria-hidden="true" href="#wifi-4" id="wifi-4" data-icon="wifi-4"></a>
 
       <a aria-hidden="true" href="#wifi-permissions" id="wifi-permissions" data-icon="wifi-permissions"></a>
+
+    </section>
+    <h2>BiDi icons (include bidi-helper.css if you want them)</h2>
+    <h3>LTR mode</h3>
+    <section dir="ltr">
+
+      <a aria-hidden="true" href="#back-ltr" id="back-ltr" data-icon="back"></a>
+
+      <a aria-hidden="true" href="#forward-ltr" id="forward-ltr" data-icon="forward"></a>
+
+      <a aria-hidden="true" href="#back-light-ltr" id="back-light-ltr" data-icon="back-light"></a>
+
+      <a aria-hidden="true" href="#forward-light-ltr" id="forward-light-ltr" data-icon="forward-light"></a>
+
+      <a aria-hidden="true" href="#arrow-back-ltr" id="arrow-back-ltr" data-icon="arrow-back"></a>
+
+      <a aria-hidden="true" href="#arrow-forward-ltr" id="arrow-forward-ltr" data-icon="arrow-forward"></a>
+
+      <a aria-hidden="true" href="#clear-input-ltr" id="clear-input-ltr" data-icon="clear-input"></a>
+
+      <a aria-hidden="true" href="#expand-ltr" id="expand-ltr" data-icon="expand"></a>
+
+      <a aria-hidden="true" href="#send-ltr" id="send-ltr" data-icon="send"></a>
+
+      <a aria-hidden="true" href="#edit-ltr" id="edit-ltr" data-icon="edit"></a>
+
+    </section>
+    <h3>RTL mode</h3>
+    <section dir="rtl">
+
+      <a aria-hidden="true" href="#back-rtl" id="back-rtl" data-icon="back"></a>
+
+      <a aria-hidden="true" href="#forward-rtl" id="forward-rtl" data-icon="forward"></a>
+
+      <a aria-hidden="true" href="#back-light-rtl" id="back-light-rtl" data-icon="back-light"></a>
+
+      <a aria-hidden="true" href="#forward-light-rtl" id="forward-light-rtl" data-icon="forward-light"></a>
+
+      <a aria-hidden="true" href="#arrow-back-rtl" id="arrow-back-rtl" data-icon="arrow-back"></a>
+
+      <a aria-hidden="true" href="#arrow-forward-rtl" id="arrow-forward-rtl" data-icon="arrow-forward"></a>
+
+      <a aria-hidden="true" href="#clear-input-rtl" id="clear-input-rtl" data-icon="clear-input"></a>
+
+      <a aria-hidden="true" href="#expand-rtl" id="expand-rtl" data-icon="expand"></a>
+
+      <a aria-hidden="true" href="#send-rtl" id="send-rtl" data-icon="send"></a>
+
+      <a aria-hidden="true" href="#edit-rtl" id="edit-rtl" data-icon="edit"></a>
 
     </section>
     <footer>

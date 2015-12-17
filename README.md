@@ -1,20 +1,20 @@
-# gaia-icons
+# fxos-icons
 
 ## Installation
 
 ```bash
-$ bower install gaia-components/gaia-icons
+$ npm install fxos-icons
 ```
 
 Then include folowing file in HTML
 
 ```html
-<script src="bower_components/gaia-icons/gaia-icons.js"></script>
+<link rel="stylesheet" href="node_modules/fxos-icons/fxos-icons.css">
 ```
 
 ## Usage
 
-Use `i` tag to present an icon.
+Use `i` tag to represent an icon.
 
 ```html
 <i data-icon="camera" data-l10n-id="camera"></i>
@@ -22,7 +22,7 @@ Use `i` tag to present an icon.
 
 ## Examples
 
-- [Example](http://gaia-components.github.io/gaia-icons/)
+- [Example](http://fxos-components.github.io/fxos-icons/)
 
 ## Accessibility
 
