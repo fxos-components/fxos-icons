@@ -1,33 +1,97 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   width="30"
-   height="30"
-   viewBox="0 0 30 30"
-   id="svg2">
-  <metadata
-     id="metadata10">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs8" />
-  <path
-     d="m 14.948,23.433 c -4.206,0 -7.693,-3.046 -8.396,-7.05 1.08,-0.095 2.07,-0.327 2.893,-0.66 l -3.25,-3.25 c -0.403,-0.404 -1.057,-0.404 -1.46,0 L 1.49,15.718 c 0.765,0.31 1.68,0.528 2.673,0.634 0.713,5.327 5.264,9.44 10.786,9.44 3.01,0 5.73,-1.222 7.7,-3.194 l -1.67,-1.67 c -1.55,1.547 -3.68,2.503 -6.04,2.503 z m 10.786,-9.99 C 25.021,8.117 20.47,4.005 14.948,4.005 c -3.01,0 -5.733,1.22 -7.705,3.192 l 1.67,1.67 c 1.543,-1.546 3.678,-2.502 6.035,-2.502 4.206,0 7.693,3.046 8.396,7.05 -1.08,0.095 -2.07,0.327 -2.893,0.66 l 3.25,3.25 c 0.41,0.404 1.06,0.404 1.46,0 l 3.25,-3.246 c -0.76,-0.32 -1.68,-0.53 -2.67,-0.64 z"
-     inkscape:connector-curvature="0"
-     id="path4" />
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+	 height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<g id="&#x5716;&#x5C64;_1">
+</g>
+<g id="Help">
+</g>
+<g id="Improve">
+</g>
+<g id="Bluetooth">
+</g>
+<g id="Sound">
+</g>
+<g id="Display">
+</g>
+<g id="Homescreen">
+</g>
+<g id="Search">
+</g>
+<g id="Navigation">
+</g>
+<g id="Notification">
+</g>
+<g id="Language">
+</g>
+<g id="DateTime">
+</g>
+<g id="Firefox">
+</g>
+<g id="FindMyDevice">
+</g>
+<g id="FindMyDevice_x5F_New" style="display:none;">
+</g>
+<g id="Lock">
+</g>
+<g id="Permission">
+</g>
+<g id="DoNotTrack">
+</g>
+<g id="Browsing">
+</g>
+<g id="USB">
+</g>
+<g id="MediaStorage">
+</g>
+<g id="Storage">
+</g>
+<g id="Info">
+</g>
+<g id="Download">
+</g>
+<g id="Battery">
+</g>
+<g id="Accessibility">
+</g>
+<g id="Developer">
+</g>
+<g id="Messaging">
+</g>
+<g id="NFC">
+</g>
+<g id="Theme_x5F_3" style="display:none;">
+</g>
+<g id="Theme_x5F_2">
+</g>
+<g id="Theme_x5F_1" style="display:none;">
+</g>
+<g id="Keyboard">
+</g>
+<g id="InternetSharing">
+</g>
+<g id="SIMManager">
+</g>
+<g id="Cellular">
+</g>
+<g id="CallSetting">
+</g>
+<g id="Wifi">
+</g>
+<g id="Geolocation">
+</g>
+<g id="Airplane">
+</g>
+<g id="Addons">
+	<g>
+		<g>
+			<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#040000;" d="M14.775,22.985c-3.68,0-6.73-2.665-7.345-6.168
+				c0.946-0.083,1.81-0.286,2.53-0.578l-2.843-2.843c-0.353-0.353-0.924-0.353-1.277,0L3,16.237c0.67,0.272,1.47,0.462,2.339,0.555
+				c0.623,4.66,4.605,8.258,9.436,8.258c2.633,0,5.016-1.067,6.741-2.793l-1.46-1.46C18.705,22.149,16.838,22.985,14.775,22.985z
+				 M24.211,14.247c-0.624-4.66-4.605-8.258-9.436-8.258c-2.633,0-5.016,1.068-6.741,2.793l1.46,1.46
+				c1.351-1.352,3.218-2.188,5.281-2.188c3.68,0,6.73,2.665,7.345,6.168c-0.946,0.083-1.81,0.286-2.53,0.577l2.843,2.843
+				c0.353,0.353,0.924,0.353,1.277,0l2.84-2.84C25.88,14.53,25.081,14.34,24.211,14.247z"/>
+		</g>
+	</g>
+</g>
 </svg>
